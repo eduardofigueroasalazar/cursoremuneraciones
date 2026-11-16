@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitación SIGPER Remuneraciones y Centralización 2026</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <span class="brand-badge">SIGPER 2026</span>
+        <div>
+          <h1>Capacitación Remuneraciones &amp; Centralización</h1>
+          <p class="subtitle">Evaluación (100 preguntas) y Explicador de Cálculos Excel</p>
+        </div>
+      </div>
+      <nav class="nav-tabs" aria-label="Secciones principales">
+        <button type="button" class="nav-btn active" data-tab="quiz" aria-pressed="true">
+          Cuestionario <span class="pill">100</span>
+        </button>
+        <button type="button" class="nav-btn" data-tab="excel" aria-pressed="false">
+          Cálculos Excel <span class="pill">6 libros</span>
+        </button>
+        <button type="button" id="themeToggle" class="theme-btn" aria-label="Cambiar tema claro u oscuro" title="Cambiar tema">
+          Tema
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <!-- MÓDULO 1: CUESTIONARIO -->
+    <section id="tab-quiz" class="tab-panel active" aria-label="Cuestionario de 100 preguntas">
+      <div class="card controls-card">
+        <div class="controls-grid">
+          <div class="control-group">
+            <label for="filterSession">Sesión</label>
+            <select id="filterSession">
+              <option value="ALL">Todas las sesiones (100)</option>
+              <option value="Sesión 1">Sesión 1 — Marco Legal y Formulación (25)</option>
+              <option value="Sesión 2">Sesión 2 — Proceso y Funciones (25)</option>
+              <option value="Sesión 3">Sesión 3 — Liquidaciones y Prioridad (25)</option>
+              <option value="Sesión 4">Sesión 4 — Centralización Contable (25)</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <label for="filterDifficulty">Dificultad</label>
+            <select id="filterDifficulty">
+              <option value="ALL">Todas</option>
+              <option value="Básica">Básica</option>
+              <option value="Intermedia">Intermedia</option>
+              <option value="Avanzada">Avanzada</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <label for="quizMode">Modo</label>
+            <select id="quizMode">
+              <option value="all">Secuencial (todas las filtradas)</option>
+              <option value="random20">Repaso rápido (20 aleatorias)</option>
+              <option value="wrong">Solo respondidas incorrectamente</option>
+            </select>
+          </div>
+          <div class="control-group actions-group">
+            <button type="button" id="btnApplyQuiz" class="btn btn-primary">Aplicar / Iniciar</button>
+            <button type="button" id="btnResetProgress" class="btn btn-ghost">Reiniciar progreso</button>
+          </div>
+        </div>
+
+        <div class="stats-bar" id="quizStatsBar">
+          <div class="stat-item"><span class="stat-label">Respondidas</span><strong id="statAnswered">0 / 100</strong></div>
+          <div class="stat-item"><span class="stat-label">Correctas</span><strong id="statCorrect" class="text-ok">0</strong></div>
+          <div class="stat-item"><span class="stat-label">Incorrectas</span><strong id="statWrong" class="text-err">0</strong></div>
+          <div class="stat-item"><span class="stat-label">Efectividad</span><strong id="statPct">0%</strong></div>
+        </div>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="quizProgressTrack">
+          <div class="progress-fill" id="quizProgressFill"></div>
+        </div>
+      </div>
+
+      <div id="quizBody" class="quiz-body">
+        <div class="card empty-state">Cargando banco de 100 preguntas...</div>
+      </div>
+
+      <div class="card session-summary" id="sessionSummaryCard">
+        <h2>Desempeño por Sesión</h2>
+        <div class="summary-grid" id="sessionSummaryGrid"></div>
+      </div>
+    </section>
+
+    <!-- MÓDULO 2: EXPLICADOR EXCEL -->
+    <section id="tab-excel" class="tab-panel" hidden aria-label="Explicador de cálculos Excel">
+      <div class="card controls-card">
+        <div class="excel-controls">
+          <div class="control-group grow">
+            <label for="excelWorkbookSelect">Libro Excel de Taller</label>
+            <select id="excelWorkbookSelect"></select>
+          </div>
+          <div class="control-group grow">
+            <label for="excelSearch">Buscar fórmula, concepto o celda</label>
+            <input type="search" id="excelSearch" placeholder="Ej: BIENIOS, 21521, CPCHP, ROUND, IUR...">
+          </div>
+        </div>
+      </div>
+
+      <div id="excelContent" class="excel-content">
+        <div class="card empty-state">Cargando cálculos de los archivos Excel...</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>Curso SIGPER Remuneraciones y Centralización Contable 2026 · Aplicación de estudio estática</span>
+    </div>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

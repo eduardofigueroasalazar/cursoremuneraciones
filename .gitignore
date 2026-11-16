@@ -1,0 +1,13 @@
+# Archivos privados del curso (no subir a GitHub)
+*.pptx
+*.xlsx
+*.xlsm
+*.docx
+*.mp3
+*.wav
+
+# Sistema / Python
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

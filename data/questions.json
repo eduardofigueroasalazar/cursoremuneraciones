@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 1,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 4-5",
+    "tema": "Marco Legal",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué artículo del Código del Trabajo establece las reglas sobre el pago de remuneraciones y la entrega de la liquidación de sueldo?",
+    "opciones": [
+      "Artículo 41",
+      "Artículo 54",
+      "Artículo 58",
+      "Artículo 44"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la lámina 4, el Código del Trabajo en su artículo 54 establece tres reglas sobre el pago de las remuneraciones y respalda la entrega de la liquidación de sueldo."
+  },
+  {
+    "id": 2,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 5",
+    "tema": "Marco Legal",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuál es la diferencia principal entre haberes imponibles (Art. 41 inc. 1º y Art. 42) y haberes no imponibles (Art. 41 inc. 2º)?",
+    "opciones": [
+      "Los no imponibles son parte del sueldo base y los imponibles no",
+      "Sobre los haberes imponibles se cotiza, mientras que los no imponibles se pagan pero no constituyen remuneración",
+      "Los haberes no imponibles siempre requieren autorización escrita para pagarse",
+      "Los haberes imponibles no forman parte del sueldo bruto"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la lámina 5 se indica que sobre los haberes imponibles se cotiza, y los no imponibles se pagan pero no son remuneración; ambos suman el total de haberes o sueldo bruto."
+  },
+  {
+    "id": 3,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 5-6",
+    "tema": "Marco Legal",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué artículo del Código del Trabajo regula qué descuentos son obligatorios por ley y cuáles requieren autorización escrita del trabajador?",
+    "opciones": [
+      "Artículo 1",
+      "Artículo 42",
+      "Artículo 44",
+      "Artículo 58"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las láminas 5 y 6 señalan que el Art. 58 del D.F.L. N° 1 de 2002 define qué se descuenta por ley y qué necesita autorización escrita."
+  },
+  {
+    "id": 4,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 6",
+    "tema": "Marco Legal",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cómo rige el Código del Trabajo (D.F.L. N° 1 de 2002) respecto de los siete regímenes estatutarios del sector público?",
+    "opciones": [
+      "No aplica en absoluto al sector público",
+      "Rige supletoriamente en lo que el respectivo estatuto no regula (Art. 1)",
+      "Reemplaza completamente las escalas de grados de cada estatuto",
+      "Solo aplica a contratos a honorarios"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la lámina 6, el Art. 1 establece que en el sector público el Código del Trabajo rige supletoriamente en lo que el estatuto no regula."
+  },
+  {
+    "id": 5,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 7",
+    "tema": "Regímenes de Remuneración",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué norma rige al Estatuto Administrativo de la Administración Central del Estado y cuál es su escala de sueldo base?",
+    "opciones": [
+      "Ley 18.883 con Escala municipal",
+      "Ley 18.834 con Escala Única (D.L. 249)",
+      "D.L. 3.551 con Escala fiscalizadora",
+      "Ley 19.070 con Remuneración básica mínima"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La tabla de la lámina 7 muestra que el Estatuto Administrativo se rige por la Ley 18.834 y utiliza la Escala Única (D.L. 249)."
+  },
+  {
+    "id": 6,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 7-8",
+    "tema": "Regímenes de Remuneración",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cuál de los siguientes regímenes estatutarios paga el sueldo base por hora cronológica en lugar de un sueldo mensual por grado?",
+    "opciones": [
+      "Estatuto Municipal (Ley 18.883)",
+      "Entidades Fiscalizadoras (D.L. 3.551)",
+      "Estatuto Docente (Ley 19.070)",
+      "Atención Primaria (Ley 19.378)"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En la lámina 9 se destaca que casi todos los regímenes pagan sueldo mensual por grado o categoría, excepto el Estatuto Docente (por hora cronológica) y la Ley 15.076 (jornada de 11 a 44 horas)."
+  },
+  {
+    "id": 7,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 7-8",
+    "tema": "Regímenes de Remuneración",
+    "dificultad": "Intermedia",
+    "enunciado": "¿A quiénes aplica la Ley 21.109 y cómo se determina su sueldo base?",
+    "opciones": [
+      "Médicos y dentistas; por etapa y horas semanales",
+      "Asistentes de educación en Servicios Locales de Educación; por categoría y mínimo legal",
+      "Funcionarios de municipalidades; por escala propia por grado",
+      "Personal de consultorios y postas; por categoría y nivel"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 7 indica que la Ley 21.109 rige a los Asistentes de educación en Servicios Locales de Educación, con sueldo base por categoría y mínimo legal."
+  },
+  {
+    "id": 8,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 9",
+    "tema": "Regímenes de Remuneración",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué elemento estructural NO cambia entre los ocho regímenes de remuneración?",
+    "opciones": [
+      "La forma de reajuste anual",
+      "La unidad de pago (hora vs. mes)",
+      "La estructura de haberes imponibles, no imponibles y descuentos",
+      "La autoridad que fija el sueldo base"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 9 concluye: 'Lo que no cambia: haberes imponibles, no imponibles y descuentos. Esa estructura es la misma en los ocho'."
+  },
+  {
+    "id": 9,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 10",
+    "tema": "Cálculo de Días",
+    "dificultad": "Básica",
+    "enunciado": "Por regla general en SIGPER, ¿sobre qué base y tope se calculan los días trabajados?",
+    "opciones": [
+      "Base 31 días, con fórmula (31 - inicio + 1) y tope 31",
+      "Base 30 días, con fórmula (30 - inicio + 1) y tope de días a considerar de 30",
+      "Base días hábiles del mes sin tope",
+      "Base 28 días en febrero y 30 en los demás meses"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 10 establece que por regla general todos los cálculos son en base a 30 días: (30 - inicio + 1), con tope de 30 días."
+  },
+  {
+    "id": 10,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 11-12",
+    "tema": "Cálculo de Días",
+    "dificultad": "Intermedia",
+    "enunciado": "En un mes de 31 días con ausencias con descuento, ¿cómo calcula la opción por defecto (30 Días) los días trabajados?",
+    "opciones": [
+      "Días contrato (hasta el 31) menos días de ausencia",
+      "Días contrato (hasta el 30) menos días de ausencia",
+      "Siempre 30 días sin descontar ausencias",
+      "31 menos días de ausencia más 1"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la lámina 12, la opción '30 Días (por defecto)' calcula: Días contrato (hasta el 30) - días ausencia."
+  },
+  {
+    "id": 11,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 13",
+    "tema": "Cálculo de Días",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué tipos de ausencia se consideran en el cálculo de días de ausencia (con tope 30)?",
+    "opciones": [
+      "Solo licencias médicas y feriado legal",
+      "Licencias médicas, permiso postnatal parental, accidentes del trabajo y permiso sin goce de sueldo",
+      "Únicamente permisos administrativos con goce de sueldo",
+      "Solo atrasos e inasistencias injustificadas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 13 enumera: licencias médicas, permiso postnatal parental, accidentes del trabajo y permiso sin goce de sueldo."
+  },
+  {
+    "id": 12,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 14",
+    "tema": "Parámetros Generales",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué módulo administra el repositorio de ausentismos desde donde SIGPER lee las 'Ausencias desfasadas'?",
+    "opciones": [
+      "Módulo REM",
+      "Módulo CEN",
+      "Módulo FYP",
+      "Módulo SIGFIN"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 14 indica expresamente que dicho repositorio de ausentismos a descontar es administrado por el módulo FYP."
+  },
+  {
+    "id": 13,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 15",
+    "tema": "Parámetros Calidad Jurídica",
+    "dificultad": "Intermedia",
+    "enunciado": "En los parámetros por calidad jurídica, ¿en qué calidad es opcional el descuento por Permiso Sin Goce de Sueldo (PSGS)?",
+    "opciones": [
+      "Titular (1)",
+      "Contrata (2)",
+      "Honorarios (10)",
+      "Suplente (3)"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 15 señala: 'PSGS es opcional sólo en Honorarios (10)'."
+  },
+  {
+    "id": 14,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 16",
+    "tema": "Formulación",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuáles son los 3 tipos de fórmulas que existen en SIGPER?",
+    "opciones": [
+      "Sueldos, Bonos y Retenciones",
+      "Haberes (ingresos), Descuentos (legales/internos) y Bases de cálculo (apoyo/totalizadores)",
+      "Atributos, Constantes y Tablas definibles",
+      "Imponibles, Tributables y Exentos únicamente"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 16 clasifica las fórmulas en 3 tipos: Haberes (imponibles, tributables, exentos), Descuentos (legales, internos) y Bases de cálculo (cálculos de apoyo y totalizadores TH, TD, TDI, LAP)."
+  },
+  {
+    "id": 15,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 17",
+    "tema": "Árbol de Evaluación",
+    "dificultad": "Intermedia",
+    "enunciado": "En el árbol de evaluación de formulación, ¿para qué se utiliza la fórmula DELTA?",
+    "opciones": [
+      "Para calcular únicamente el líquido a pago",
+      "Para llamar a bases de cálculo que no se utilizan en la rama del LAP",
+      "Para redondear los haberes exentos",
+      "Para eliminar liquidaciones duplicadas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 17 indica que DELTA es utilizado para llamar a bases de cálculo que no se utilizan en la rama del LAP (Líquido a Pago)."
+  },
+  {
+    "id": 16,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 17",
+    "tema": "Árbol de Evaluación",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuál es la característica del 'Elemento principal' (ej. RAIZ, RAIZHON, RAIZSLEP) en el árbol de evaluación?",
+    "opciones": [
+      "Es la primera fórmula en evaluarse antes de los atributos",
+      "Agrupa las relaciones de todas las fórmulas y es la última en evaluarse",
+      "Solo aplica a descuentos judiciales",
+      "Se evalúa únicamente en procesos de anticipo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Según la lámina 17, el Elemento principal agrupa las relaciones de todas las fórmulas y es la última en evaluarse."
+  },
+  {
+    "id": 17,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 19",
+    "tema": "Definición de Fórmula",
+    "dificultad": "Intermedia",
+    "enunciado": "En la definición de fórmula, ¿qué diferencia existe entre Tipo de cálculo 'Diferencia' y 'Completo'?",
+    "opciones": [
+      "Diferencia resta impuestos; Completo no",
+      "Diferencia calcula (cálculo actual - monto pagado), mientras que Completo entrega el cálculo actual",
+      "Diferencia solo aplica a bases de cálculo",
+      "Completo solo funciona en reliquidaciones"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 19 define: Diferencia = cálculo actual - monto pagado; Completo = cálculo actual."
+  },
+  {
+    "id": 18,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 19-20",
+    "tema": "Definición de Fórmula",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué parámetro de la definición de fórmula habilita un nuevo cálculo cuando el funcionario ya tiene una liquidación en el periodo?",
+    "opciones": [
+      "Proporcionalidad",
+      "Redondeo",
+      "Cálculo bloques",
+      "Reliquidación (Si / No)"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La lámina 20 indica que 'Reliquidación (Si / No)' habilita un nuevo cálculo cuando el funcionario ya tiene una liquidación."
+  },
+  {
+    "id": 19,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 21-22",
+    "tema": "Elementos de Formulación",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuántos atributos con aplicación al Contrato y al Funcionario existen en SIGPER según la presentación?",
+    "opciones": [
+      "39 al Contrato y 69 al Funcionario",
+      "69 al Contrato y 102 al Funcionario",
+      "102 al Contrato y 69 al Funcionario",
+      "50 al Contrato y 50 al Funcionario"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 21 y 22 detallan 69 atributos con aplicación Contrato y 102 atributos con aplicación Funcionario."
+  },
+  {
+    "id": 20,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 23",
+    "tema": "Elementos de Formulación",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué función de formulación permite obtener el monto pagado de una fórmula X en un Año/Mes anterior indicado?",
+    "opciones": [
+      "PAGADO",
+      "DIFERENCIA",
+      "HISTPAGO",
+      "CONSTANTE"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 23 define HISTPAGO como la función que obtiene el monto pagado de una fórmula X en un Año/Mes indicado (mientras PAGADO lee procesos previos del mismo mes)."
+  },
+  {
+    "id": 21,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 25-26",
+    "tema": "Elementos de Formulación",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué diferencia clave existe entre una 'Agrupación de fórmulas (@)' y una 'Variable de usuario (@)'?",
+    "opciones": [
+      "La Agrupación de fórmulas requiere documento y genera cálculos proporcionados si inicia/finaliza en el mes; la Variable de usuario no requiere documento y se ingresa por periodo",
+      "La Variable de usuario solo sirve para constantes como la UF",
+      "La Agrupación de fórmulas nunca se proporciona",
+      "No existe ninguna diferencia operativa"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las láminas 25 y 26 explican que la Agrupación de fórmulas administra reconocimientos mediante documentos (y proporciona por fechas), mientras la Variable de usuario administra marcas o montos por periodo sin documento."
+  },
+  {
+    "id": 22,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 27-28",
+    "tema": "Elementos de Formulación",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué función se debe utilizar en una fórmula para obtener el valor de una Constante (como UF, UTM o Tope) para el periodo del proceso?",
+    "opciones": [
+      "TABLA()",
+      "REDONDEAR()",
+      "CONSTANTE()",
+      "MIN()"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 27 indica: 'Para obtener su valor en la formulación se debe usar la función CONSTANTE'."
+  },
+  {
+    "id": 23,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 30-32",
+    "tema": "Operadores",
+    "dificultad": "Básica",
+    "enunciado": "En la sintaxis de formulación de SIGPER, ¿qué significan los operadores lógicos `.y.` y `.o.`?",
+    "opciones": [
+      "`.y.` es suma y `.o.` es resta",
+      "`.y.` exige que se cumplan todas las condiciones; `.o.` exige al menos una condición",
+      "`.y.` es distinto y `.o.` es igual",
+      "Ambos evalúan solo el primer paréntesis"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 31 define `.y.` (deben cumplirse todas las condiciones) y `.o.` (debe cumplirse al menos una condición)."
+  },
+  {
+    "id": 24,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 33",
+    "tema": "Detalle de Formulación",
+    "dificultad": "Intermedia",
+    "enunciado": "En el detalle de formulación, ¿qué valor numérico se ingresa en la sección 'Condición' cuando una fórmula NO requiere condición para aplicarse?",
+    "opciones": [
+      "0",
+      "-1",
+      "1",
+      "NULL"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 33 indica: 'Condición: Lógica que se debe cumplir para aplicar el cálculo. Si no se requiere una condición se usa el 1'."
+  },
+  {
+    "id": 25,
+    "sesion": "Sesión 1",
+    "diapositiva": "Slide 39-40",
+    "tema": "Evaluación de Formulación",
+    "dificultad": "Avanzada",
+    "enunciado": "En el ejemplo de cálculo de BIENIOS (Slide 40), con SBASE = 251.979 y @BIENIO = 15, ¿qué resultado entrega `Redondear(251979 % 15 * 2)`?",
+    "opciones": [
+      "37.797",
+      "75.594",
+      "151.187",
+      "25.198"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En la lámina 40 el operador `%` representa porcentaje: 251.979 * (15 * 2)% = 251.979 * 30% = 75.593,7, que redondeado da 75.594."
+  },
+  {
+    "id": 26,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 4",
+    "tema": "Análisis de Formulación",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué realiza el proceso de 'Análisis de formulación' en SIGPER?",
+    "opciones": [
+      "Envía los vouchers contables a SIGFIN",
+      "Analiza relaciones entre fórmulas desde el Elemento principal, identifica dependencias y genera las secuencias de ejecución por periodo",
+      "Imprime las liquidaciones masivas en PDF",
+      "Calcula únicamente el impuesto único de segunda categoría"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 4 explica que el análisis identifica dependencias entre fórmulas a partir del Elemento principal y genera las secuencias de ejecución por periodo."
+  },
+  {
+    "id": 27,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 5",
+    "tema": "Definición de Proceso",
+    "dificultad": "Intermedia",
+    "enunciado": "En la definición del proceso de cálculo, ¿para qué se utiliza el parámetro 'Simulador (Si/No)'?",
+    "opciones": [
+      "Para ejecutar el cierre de mes",
+      "Para utilizar el proceso en la opción 'Embrutecedor de haberes'",
+      "Para generar el archivo abono banco",
+      "Para habilitar la cola de procesos"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 5 indica que 'Simulador (No / Si)' se utiliza en la opción 'Embrutecedor de haberes'."
+  },
+  {
+    "id": 28,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 5",
+    "tema": "Definición de Proceso",
+    "dificultad": "Intermedia",
+    "enunciado": "Cuando se marca 'Anticipo = Si' en un proceso de cálculo, ¿qué fórmulas se habilitan?",
+    "opciones": [
+      "Todas las fórmulas imponibles del sistema",
+      "Solo las fórmulas con clasificación Anticipo y sus relacionadas (EXENTO, TH, LAP)",
+      "Únicamente los descuentos judiciales",
+      "Solo las bases de cálculo DELTA"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 5 señala que Anticipo habilita solo las fórmulas requeridas para el pago de un anticipo: clasificación Anticipo y sus relacionadas (EXENTO, TH, LAP)."
+  },
+  {
+    "id": 29,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 6",
+    "tema": "Definición de Proceso",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuál es la diferencia entre configurar la 'Aplicación' del proceso como Funcionario versus Contrato?",
+    "opciones": [
+      "Funcionario genera una única liquidación por funcionario; Contrato genera una liquidación por cada contrato considerando solo fórmulas al contrato",
+      "Contrato paga siempre el doble que Funcionario",
+      "Funcionario excluye los descuentos legales",
+      "Contrato solo funciona en modo Centralizado"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Según las láminas 6 y 19, Aplicación Funcionario genera una única liquidación por proceso, mientras que Aplicación Contrato genera N liquidaciones según cantidad de contratos a pago."
+  },
+  {
+    "id": 30,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 6",
+    "tema": "Definición de Proceso",
+    "dificultad": "Básica",
+    "enunciado": "En el 'Modo Aplicación' del proceso, ¿qué modo considera únicamente a los funcionarios de un Grupo de unidad laboral específico?",
+    "opciones": [
+      "Centralizado",
+      "Multigrupo",
+      "Distribuido",
+      "Consolidado"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 6 define: Distribuido considera solo los funcionarios de un Grupo en particular (habilitando el selector Grupo)."
+  },
+  {
+    "id": 31,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 7",
+    "tema": "Cierre de Mes",
+    "dificultad": "Intermedia",
+    "enunciado": "¿En qué opción del sistema se aplican las validaciones de 'Valida centralización' y 'Valida pago cotizaciones' configuradas en el proceso?",
+    "opciones": [
+      "En la Cola de procesos",
+      "En 'Cierre de remuneraciones'",
+      "En 'Movimientos informados'",
+      "En 'Consulta liquidación'"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 7 indica que estas validaciones se aplican en la opción 'Cierre de remuneraciones'."
+  },
+  {
+    "id": 32,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 8",
+    "tema": "Tipos de Contrato",
+    "dificultad": "Intermedia",
+    "enunciado": "En procesos distribuidos con Tipo Honorario, ¿qué valida el parámetro 'Contra Boleta' en 'Si'?",
+    "opciones": [
+      "Que el funcionario tenga al menos 30 días de licencia",
+      "Que todos los contratos de esa calidad jurídica tengan una boleta de honorarios ingresada",
+      "Que el monto líquido sea mayor al ingreso mínimo",
+      "Que el contrato esté centralizado previamente"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 8 señala que si 'Contra Boleta' está en 'Si', se validará que todos los contratos de esa calidad jurídica tengan una boleta de honorarios ingresada."
+  },
+  {
+    "id": 33,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 10",
+    "tema": "Financiamiento",
+    "dificultad": "Básica",
+    "enunciado": "En la definición de Financiamiento de un proceso, ¿qué ocurre si no se define ningún financiamiento?",
+    "opciones": [
+      "El proceso falla al ejecutar",
+      "No calcula ningún contrato",
+      "Se leen todos los financiamientos",
+      "Solo calcula contratos a contrata"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 10 indica que esta definición es opcional y cuando no se define se leen todos los financiamientos."
+  },
+  {
+    "id": 34,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 13",
+    "tema": "Cola de Procesos",
+    "dificultad": "Avanzada",
+    "enunciado": "¿Cuál de los siguientes NO es un requisito para que opere la Cola de procesos de cálculo?",
+    "opciones": [
+      "Servicio '131 REM – Cola de procesos' habilitado",
+      "Servicio '101 SIN – Envía e-mail' habilitado",
+      "Tarea programada 'REM – Cola de procesos' activa con periodicidad 'Intervalo' y Demonio activo",
+      "Servicio '203 CEN – Envío voucher' ejecutándose en simultáneo"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La lámina 13 lista los 4 requisitos: Servicio 131 REM, Servicio 101 SIN, Tarea programada 'REM – Cola de procesos' con periodicidad Intervalo y Demonio activo."
+  },
+  {
+    "id": 35,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 15-16",
+    "tema": "Validaciones de Ejecución",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cuál de las siguientes validaciones impide enviar a ejecutar un proceso de cálculo?",
+    "opciones": [
+      "Que el proceso esté en estado 'Publicado' o ya 'Centralizado'",
+      "Que el funcionario tenga más de un contrato",
+      "Que existan fórmulas de tipo Base de cálculo",
+      "Que el mes tenga 31 días"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las láminas 15 y 16 detallan que el proceso no debe estar Publicado, Centralizado, ni en ejecución/cola pendiente, ni chocando con Análisis de fórmulas, Cierre o Control de asistencia (si no permite simultaneidad)."
+  },
+  {
+    "id": 36,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 19-25",
+    "tema": "Lógica Interna e Iteraciones",
+    "dificultad": "Avanzada",
+    "enunciado": "En el Ejemplo 1 (Cambio de grado el 16 de junio, proceso con aplicación al Funcionario), ¿cuántas iteraciones de cálculo realiza el sistema?",
+    "opciones": [
+      "1 iteración única por todo el mes",
+      "2 iteraciones (una por cada quincena, sin consolidar)",
+      "3 iteraciones: Contrato 1-15 junio, Contrato 16-30 junio, y Funcionario consolidado",
+      "4 iteraciones porque son 2 contratos"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las láminas 21 a 24 muestran 3 iteraciones: 1) Fórmulas al Contrato 1-15 junio (Grado 08), 2) Fórmulas al Contrato 16-30 junio (Grado 07), 3) Totalización de fórmulas al Contrato y cálculo de fórmulas al Funcionario."
+  },
+  {
+    "id": 37,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 25",
+    "tema": "Lógica Interna",
+    "dificultad": "Intermedia",
+    "enunciado": "Cuando un funcionario tiene particiones por cambio de grado en un proceso al Funcionario, ¿a qué contrato queda asociada finalmente la liquidación?",
+    "opciones": [
+      "Al primer contrato o primera partición",
+      "Al último contrato, visualizando los cálculos consolidados",
+      "Se generan dos liquidaciones separadas",
+      "No queda asociada a ningún contrato"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 25 establece: 'La liquidación queda asociada al último contrato y se visualiza los cálculos consolidados'."
+  },
+  {
+    "id": 38,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 26-34",
+    "tema": "Lógica Interna e Iteraciones",
+    "dificultad": "Avanzada",
+    "enunciado": "En el Ejemplo 2 (2 contratos de 32 y 2 horas, cumplimiento de bienio el 9 de junio, aplicación al Contrato), ¿cuántas iteraciones realiza SIGPER?",
+    "opciones": [
+      "2 iteraciones (una por contrato)",
+      "3 iteraciones",
+      "4 iteraciones (2 particiones del correlativo 1 + 2 particiones del correlativo 3)",
+      "6 iteraciones"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 28 muestra 4 iteraciones: Correlativo 1 (1-8 jun y 9-30 jun) y Correlativo 3 (1-8 jun y 9-30 jun), generando 2 liquidaciones consolidadas por correlativo."
+  },
+  {
+    "id": 39,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 35",
+    "tema": "Funciones de Reliquidación",
+    "dificultad": "Básica",
+    "enunciado": "En el modelo mental de tabla de reliquidación de SIGPER, ¿qué tres columnas guarda cada concepto por contrato?",
+    "opciones": [
+      "Bruto, Imponible, Líquido",
+      "Calculo Mes, Pagado, Monto (Diferencia = Calculo Mes - Pagado)",
+      "Debe, Haber, Saldo",
+      "Propuesto, Calculado, Rechazado"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 35 explica que cada concepto guarda Calculo Mes (lo que calcularía hoy), Pagado (proceso anterior) y Monto (Calculo Mes - Pagado)."
+  },
+  {
+    "id": 40,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 36",
+    "tema": "Funciones",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cuál es la diferencia fundamental entre `SUMBLOQUE()` y `SUMFORCO()`?",
+    "opciones": [
+      "`SUMBLOQUE` suma todos los bloques cruzando contratos; `SUMFORCO` suma solo los bloques del contrato actual",
+      "`SUMFORCO` cruza contratos y `SUMBLOQUE` no",
+      "`SUMBLOQUE` solo suma descuentos legales",
+      "Ambas funciones devuelven exactamente el mismo resultado siempre"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lámina 36 y el resumen de la lámina 41 muestran que `SUMBLOQUE` acumula todos los bloques de cualquier contrato (sí cruza contratos), mientras `SUMFORCO` suma solo los bloques del contrato actual."
+  },
+  {
+    "id": 41,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 36",
+    "tema": "Funciones",
+    "dificultad": "Intermedia",
+    "enunciado": "Con Contrato 1 (bloques 1=0, 2=$800.000) y Contrato 2 (bloques 3=0, 4=$200.000), ¿qué valor entrega `SUMBLOQUE('SueldoBase')` al finalizar el bloque 4?",
+    "opciones": [
+      "200.000",
+      "800.000",
+      "1.000.000",
+      "0"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En la lámina 36 se muestra que `SUMBLOQUE` acumula: 0 + 800.000 + 0 + 200.000 = 1.000.000."
+  },
+  {
+    "id": 42,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 37",
+    "tema": "Funciones",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cuál es la diferencia entre `PAGADO('CONCEPTO')` y `PAGADOPRD('CONCEPTO')`?",
+    "opciones": [
+      "`PAGADO` lee la columna Pagado solo del contrato actual; `PAGADOPRD` suma la columna Pagado de todos los contratos de la persona",
+      "`PAGADOPRD` devuelve la diferencia del mes",
+      "`PAGADO` funciona en procesos normales y `PAGADOPRD` no",
+      "`PAGADO` suma todos los contratos y `PAGADOPRD` solo el primero"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lámina 37 explica que ambas leen la columna Pagado (solo en reliquidaciones), pero `PAGADO` mira solo su fila/contrato y `PAGADOPRD` suma todos los contratos y entrega ese total en cada uno."
+  },
+  {
+    "id": 43,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 38",
+    "tema": "Funciones",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué devuelve la función `DIFERENCIA('CONCEPTO')` y existe una versión equivalente que sume todos los contratos?",
+    "opciones": [
+      "Devuelve Calculo Mes + Pagado; sí existe `DIFERENCIAPRD()`",
+      "Devuelve la columna Monto (Calculo Mes - Pagado) solo del contrato actual; NO existe una función tipo 'DiferenciaPRD'",
+      "Devuelve el monto rechazado por prioridad de descuentos",
+      "Devuelve el valor de la constante UF"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 38 aclara que `DIFERENCIA()` lee la columna Monto solo del contrato actual y que no existe una función tipo 'DiferenciaPRD'."
+  },
+  {
+    "id": 44,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 39",
+    "tema": "Funciones",
+    "dificultad": "Avanzada",
+    "enunciado": "En un proceso normal (sin reliquidación), ¿qué devuelve `PAGOPROC()` en el Contrato 1 y en el Contrato 2 (si el Contrato 1 pagó $800.000)?",
+    "opciones": [
+      "Contrato 1 = 800.000, Contrato 2 = 200.000",
+      "Contrato 1 = 0, Contrato 2 = 800.000",
+      "Contrato 1 = 0, Contrato 2 = 0",
+      "Contrato 1 = 1.000.000, Contrato 2 = 1.000.000"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 39 muestra que en proceso normal `PAGOPROC` trae lo pagado en contratos calculados ANTES dentro del mismo proceso: Contrato 1 = 0 (es el primero), Contrato 2 = 800.000."
+  },
+  {
+    "id": 45,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 40",
+    "tema": "Funciones",
+    "dificultad": "Avanzada",
+    "enunciado": "En una reliquidación o reproceso, si el Contrato 1 tiene Calculo Mes $850.000 y Pagado $800.000 (diferencia $50.000), ¿qué devuelve `PAGOPROC()` para el Contrato 2?",
+    "opciones": [
+      "800.000",
+      "850.000",
+      "50.000",
+      "0"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 40 indica que en reliquidación/reproceso `PAGOPROC` trae SOLO la diferencia (Calculo Mes - Pagado) del contrato anterior: en el ejemplo, 50.000."
+  },
+  {
+    "id": 46,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 39",
+    "tema": "Funciones",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cuál es el uso típico de la función `PAGOPROC()` en escenarios multicontrato?",
+    "opciones": [
+      "Calcular bienios automáticamente",
+      "Freno multicontrato: evitar que un tope legal se pague duplicado entre contratos de la misma persona",
+      "Generar el archivo XML de SIGFIN",
+      "Reemplazar el sueldo base por horas extras"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 39 señala como uso típico: 'freno multicontrato — evita que un tope legal se pague duplicado entre contratos de la misma persona'."
+  },
+  {
+    "id": 47,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 11",
+    "tema": "Funcionarios a Procesar",
+    "dificultad": "Básica",
+    "enunciado": "En la pantalla 'Funcionarios a procesar', ¿qué acciones se pueden ejecutar de forma individual o masiva?",
+    "opciones": [
+      "Agregar, Eliminar funcionarios, Eliminar liquidaciones y Marcar / Desmarcar",
+      "Solo visualizar observaciones sin modificar nada",
+      "Modificar directamente las tablas de grados del D.L. 249",
+      "Enviar vouchers a Tesorería"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lámina 11 enumera: Agregar, Eliminar funcionarios, Eliminar liquidaciones, Marcar / Desmarcar, además de visualizar observaciones."
+  },
+  {
+    "id": 48,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 9",
+    "tema": "Definición de Proceso",
+    "dificultad": "Básica",
+    "enunciado": "En la pestaña 'Fórmulas' de la definición de proceso, ¿qué opciones existen respecto al Elemento inicial?",
+    "opciones": [
+      "Solo eliminar fórmulas",
+      "Calcular (por defecto), No calcular, y Actualizar fórmulas desde otro proceso",
+      "Convertir haberes en descuentos",
+      "Exportar a PDF"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 9 muestra las tres acciones: Calcular (por defecto), No calcular y Actualizar fórmulas desde otro proceso."
+  },
+  {
+    "id": 49,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 14",
+    "tema": "Cola de Procesos",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué ventaja ofrece la Cola de procesos frente a la ejecución tradicional?",
+    "opciones": [
+      "Evita validar si el proceso está publicado",
+      "Permite enviar procesos sin esperar que termine el actual, detener o cambiar el orden de ejecución",
+      "Elimina la necesidad de hacer Análisis de formulación",
+      "Omite las validaciones con Control de asistencia"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 14 destaca que permite enviar procesos sin esperar que termine el anterior, cambiar el orden/detener y ver el progreso en barra."
+  },
+  {
+    "id": 50,
+    "sesion": "Sesión 2",
+    "diapositiva": "Slide 41",
+    "tema": "Funciones",
+    "dificultad": "Intermedia",
+    "enunciado": "Según la tabla resumen de las 6 funciones (Slide 41), ¿cuáles de ellas cruzan contratos siempre?",
+    "opciones": [
+      "SUMFORCO y PAGADO",
+      "SUMBLOQUE y PAGADOPRD",
+      "DIFERENCIA y SUMFORCO",
+      "PAGADO y DIFERENCIA"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La tabla de la lámina 41 marca 'Sí, siempre' en ¿Cruza contratos? únicamente para `SUMBLOQUE` y `PAGADOPRD` (mientras `PAGOPROC` cruza solo el/los anterior(es))."
+  },
+  {
+    "id": 51,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 4-9",
+    "tema": "Análisis de Liquidación",
+    "dificultad": "Básica",
+    "enunciado": "En 'Análisis de liquidación', ¿qué pestaña es clave para revisar cálculos o verificar exactamente qué valores consideró el procesador para cada variable/atributo?",
+    "opciones": [
+      "Detalle Ausencias",
+      "Detalle Atributos",
+      "Observaciones",
+      "Detalle Contratos"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 9 destaca sobre 'Detalle Atributos': 'Muy importante para revisar cálculos o verificar los valores considerados por el procesador de cálculo'."
+  },
+  {
+    "id": 52,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 11",
+    "tema": "Análisis de Liquidación",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué motivos generan anotaciones visibles en la pestaña 'Observaciones' del Análisis de liquidación?",
+    "opciones": [
+      "Únicamente errores de conexión a SIGFIN",
+      "Motivos de ausencia, términos de contrato por fallecimiento, reprocesos o uso de la funcionalidad de Reintegro",
+      "Solo cambios de AFP",
+      "Únicamente liquidaciones en cero"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 11 enumera: motivos de ausencia, términos de contrato por fallecimiento, reprocesos o uso de Reintegro."
+  },
+  {
+    "id": 53,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 14",
+    "tema": "Liquidaciones",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué características distintivas tiene la 'Liquidación Excel' emitida desde Análisis de liquidación?",
+    "opciones": [
+      "Cambia según el formato de liquidación activo y oculta códigos",
+      "Su formato es único, contiene el código de cada fórmula y visualiza información de Prioridad de descuentos",
+      "Solo muestra haberes exentos",
+      "Sirve exclusivamente para liquidaciones retroactivas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 14 especifica que su formato es único (no cambia según el formato activo), incluye el código de cada fórmula y muestra información de Prioridad de descuentos."
+  },
+  {
+    "id": 54,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 13-16",
+    "tema": "Liquidaciones",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué permite la 'Liquidación retroactiva'?",
+    "opciones": [
+      "Imprimir una liquidación solo con los conceptos que se valorizaron en el periodo retroactivo seleccionado",
+      "Consolidar todos los procesos del año en un solo PDF",
+      "Anular descuentos legales ya pagados",
+      "Modificar el sueldo base del año anterior"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lámina 13 define la Liquidación retroactiva como aquella que imprime solo los conceptos que se valorizaron en el periodo retroactivo seleccionado."
+  },
+  {
+    "id": 55,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 18",
+    "tema": "Movimientos Informados",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué efecto tiene un 'Movimiento Informado' sobre el cálculo estándar de una fórmula?",
+    "opciones": [
+      "Se suma al monto calculado por la fórmula",
+      "Reemplaza el monto calculado de la fórmula por un monto propuesto, teniendo prioridad absoluta sobre la lógica estándar",
+      "Solo funciona en fórmulas de tipo Haber",
+      "Se aplica únicamente si el líquido es negativo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 18 establece que reemplaza el monto calculado por un monto propuesto con prioridad absoluta, y puede usarse en todos los tipos de fórmula (Haber, descuento, base de cálculo)."
+  },
+  {
+    "id": 56,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 19",
+    "tema": "Movimientos Informados",
+    "dificultad": "Intermedia",
+    "enunciado": "Al registrar un Movimiento Informado con 'Número y Total cuotas', ¿qué ocurre al ejecutar el cierre del periodo?",
+    "opciones": [
+      "Se borra el movimiento automáticamente",
+      "El cierre genera un movimiento informado para el siguiente periodo hasta llegar al total de cuotas",
+      "Se cobran todas las cuotas juntas en el primer mes",
+      "Se transforma en una retención judicial"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 19 indica que al usar Número y Total cuotas, el cierre genera un movimiento informado para el siguiente periodo hasta completar el total de cuotas."
+  },
+  {
+    "id": 57,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 21",
+    "tema": "Movimientos Informados",
+    "dificultad": "Intermedia",
+    "enunciado": "Una vez que un Movimiento Informado fue considerado por un proceso de cálculo, ¿qué se debe hacer para poder modificarlo o eliminarlo?",
+    "opciones": [
+      "Editarlo directamente en la grilla sin pasos previos",
+      "Eliminar la liquidación en la cual fue considerado",
+      "Ejecutar la centralización contable primero",
+      "Cambiar el código externo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 21 advierte: 'Para modificar o eliminar; se debe eliminar la liquidación en la cual fue considerado'."
+  },
+  {
+    "id": 58,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 21",
+    "tema": "Movimientos Informados",
+    "dificultad": "Básica",
+    "enunciado": "En un movimiento procesado, ¿qué campo es actualizado por la funcionalidad de Prioridad de descuentos cuando no alcanza el tope para aplicarlo completo?",
+    "opciones": [
+      "Código externo",
+      "Monto rechazado",
+      "Total cuotas",
+      "Rut del destinatario"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 21 muestra que se actualiza Monto procesado, Monto rechazado (actualizado por prioridad de descuentos) y Ult. Proc."
+  },
+  {
+    "id": 59,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 23-25",
+    "tema": "Tope por Funcionario",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cuál es el objetivo de la funcionalidad 'Tope por funcionario' en procesos con aplicación al Contrato?",
+    "opciones": [
+      "Aumentar el sueldo base en contratos múltiples",
+      "Garantizar que descuentos que conceptualmente aplican al Funcionario no se dupliquen ni excedan en escenarios multicontrato o con particiones",
+      "Permitir que el líquido sea negativo",
+      "Evitar el pago de impuestos"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 23 y 25 explican que garantiza que los descuentos se apliquen sin duplicaciones ni excesos entre múltiples contratos, usando elementos con aplicación al Funcionario."
+  },
+  {
+    "id": 60,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 26-28",
+    "tema": "Tope por Funcionario",
+    "dificultad": "Intermedia",
+    "enunciado": "En el ejemplo de Tope por funcionario (APV $5.000 y Retención judicial $307.886 con 2 contratos), ¿qué ocurre en la liquidación del correlativo 2?",
+    "opciones": [
+      "Se vuelve a descontar APV y Retención judicial completo",
+      "No se aplica el descuento de APV ni Retención judicial porque ya se consideró en el correlativo 1",
+      "Se descuenta la mitad en cada contrato",
+      "Se rechaza por falta de fondos"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 28 muestra que en la liquidación de correlativo 2 no se aplica APV ni Retención judicial porque su tope ya fue considerado en la liquidación de correlativo 1."
+  },
+  {
+    "id": 61,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 29",
+    "tema": "Prioridad de Descuentos",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué garantiza la Prioridad de descuentos de tipo 'General'?",
+    "opciones": [
+      "Que los descuentos de cooperativa se paguen primero que los legales",
+      "Que el líquido a pagar (LAP) sea siempre mayor o igual al monto mínimo configurado, teniendo alcance sobre la totalidad de los descuentos",
+      "Que el total de haberes no supere las 90 UF",
+      "Que los descuentos no obligatorios no superen el 50% del sueldo base"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 29 define Prioridad General: garantiza que el LAP sea siempre mayor o igual al monto mínimo configurado, con alcance sobre todos los descuentos."
+  },
+  {
+    "id": 62,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 29",
+    "tema": "Prioridad de Descuentos",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué controla la Prioridad de descuentos de tipo 'Aumento cooperativa'?",
+    "opciones": [
+      "Que el LAP sea igual a cero",
+      "Que la suma de los descuentos no obligatorios no exceda los topes definidos (tope general y aumento tope cooperativa)",
+      "Solo los descuentos de salud y AFP",
+      "Los descuentos retroactivos de meses anteriores"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 29 indica que Aumento cooperativa controla que la suma de los descuentos no obligatorios no exceda los topes definidos (mientras 'Topes independientes' no se usa)."
+  },
+  {
+    "id": 63,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 30-31",
+    "tema": "Prioridad de Descuentos",
+    "dificultad": "Intermedia",
+    "enunciado": "Al configurar un descuento para Prioridad de descuentos, ¿qué atributos se deben definir?",
+    "opciones": [
+      "Solo el RUT del banco",
+      "Si es Obligatorio, si tiene origen Cooperativa y su número de Prioridad (los legales solo requieren Prioridad)",
+      "Únicamente si es imponible",
+      "La fecha de nacimiento del funcionario"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 31 indica que en cada descuento se define si es Obligatorio, origen Cooperativa y su Prioridad; los descuentos legales solo requieren la prioridad."
+  },
+  {
+    "id": 64,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 33",
+    "tema": "Prioridad de Descuentos",
+    "dificultad": "Intermedia",
+    "enunciado": "¿En qué periodos se aplica la Prioridad de descuentos?",
+    "opciones": [
+      "En todos los periodos, incluyendo retroactivos",
+      "Solo en el periodo de remuneraciones vigente; excluye los periodos retroactivos",
+      "Únicamente en reliquidaciones retroactivas",
+      "Solo en el mes de diciembre"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La nota al pie de la lámina 33 aclara: 'Prioridad se aplica solo en el periodo de remuneraciones; excluye los periodos retroactivos'."
+  },
+  {
+    "id": 65,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 36",
+    "tema": "Descuentos en Cascada",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cómo funciona la lógica de 'Descuentos en cascada' en procesos con aplicación al Contrato?",
+    "opciones": [
+      "Si un descuento es rechazado en un contrato, se pierde definitivamente",
+      "Si un descuento se rechaza parcial o totalmente por superar topes en una liquidación, el monto rechazado se intenta aplicar en las siguientes liquidaciones del funcionario",
+      "Se aplican primero los descuentos de menor prioridad",
+      "Se suman todos los contratos antes de calcular ningún descuento"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 36 explica que el monto rechazado parcial o totalmente en una liquidación se intenta aplicar en las siguientes liquidaciones del funcionario para aplicar la mayor cantidad posible sin pasar los topes."
+  },
+  {
+    "id": 66,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 41",
+    "tema": "Prioridad de Descuentos",
+    "dificultad": "Básica",
+    "enunciado": "En la Liquidación Excel de un proceso con prioridad de descuentos, ¿qué ecuación relaciona el Cálculo Mes, el Rechazo y el Monto Propuesto?",
+    "opciones": [
+      "Cálculo Mes - Rechazo = Monto Propuesto",
+      "Cálculo Mes + Rechazo = Monto Propuesto",
+      "Monto Propuesto + Rechazo = Cálculo Mes",
+      "Rechazo - Monto Propuesto = Cálculo Mes"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 41 señala explícitamente la identidad: '* Cálculo Mes + Rechazo = Monto Propuesto'."
+  },
+  {
+    "id": 67,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 39-40",
+    "tema": "Ejemplos Prioridad",
+    "dificultad": "Intermedia",
+    "enunciado": "En el Ejemplo 1 (Prioridad General aplicación Funcionario), ¿qué condición se espera que cumpla el líquido a pagar?",
+    "opciones": [
+      "LAP menor o igual a PRIORIDAD",
+      "LAP mayor o igual a PRIORIDAD",
+      "LAP igual a cero",
+      "LAP igual al 25% del Total Haberes"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 39 indica como resultado esperado: 'LAP mayor o igual a PRIORIDAD'."
+  },
+  {
+    "id": 68,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 43",
+    "tema": "Ejemplos Prioridad",
+    "dificultad": "Intermedia",
+    "enunciado": "En el Ejemplo 2 (Prioridad Aumento Cooperativa aplicación Funcionario), ¿qué debe cumplir la sumatoria de descuentos No obligatorios?",
+    "opciones": [
+      "Debe ser mayor que el 25% del total haberes",
+      "Debe ser menor o igual que los topes General y Aumento tope",
+      "Debe descontarse antes que los descuentos legales",
+      "Debe ser igual al monto de la AFP"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 43 establece: 'Sumatoria de descuentos No obligatorios debe ser menor o igual que los topes General y Aumento tope'."
+  },
+  {
+    "id": 69,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 47-51",
+    "tema": "Ejemplos Prioridad SLEP",
+    "dificultad": "Avanzada",
+    "enunciado": "En el Ejemplo 3 (Prioridad General aplicación Contrato en SLEP), ¿qué ocurre entre el correlativo 1 y el correlativo 2?",
+    "opciones": [
+      "El correlativo 1 genera rechazos porque LAPSLEP < PRIORIDAD02, y el correlativo 2 considera esos rechazos logrando aplicar el 100% de los descuentos",
+      "Ambos correlativos rechazan todos los descuentos",
+      "El correlativo 2 ignora los rechazos del correlativo 1",
+      "Se aplica el descuento de APV en ambos correlativos"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las láminas 49 a 51 muestran que el correlativo 1 genera rechazos (LAPSLEP < PRIORIDAD02), el correlativo 2 toma esos rechazos en cascada y en el consolidado se aplica el 100% de los descuentos."
+  },
+  {
+    "id": 70,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 52-56",
+    "tema": "Ejemplos Prioridad SLEP",
+    "dificultad": "Avanzada",
+    "enunciado": "En el Ejemplo 4 (Aumento Cooperativa aplicación Contrato), ¿qué porcentaje máximo del Total Haberes terminan respetando los descuentos no obligatorios en el consolidado?",
+    "opciones": [
+      "10%",
+      "15%",
+      "25% (15% tope general + 10% aumento cooperativa)",
+      "50%"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La lámina 56 concluye: 'Descuentos no obligatorios respetan el 25% del total haberes' (combinación del 15% general + 10% aumento cooperativa)."
+  },
+  {
+    "id": 71,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 15-17",
+    "tema": "Liquidaciones",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuáles son las 3 formas disponibles para emitir liquidaciones masivas en un solo archivo?",
+    "opciones": [
+      "Solo individuales por RUT",
+      "Individuales por año/mes/proceso, Consolidadas por funcionario y periodo, y Consolidadas por funcionario/periodo con selección de procesos",
+      "Únicamente en formato CSV sin gráfica",
+      "Por centro de costo y por AFP"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 17 lista exactamente esas tres formas para emitir liquidaciones masivas."
+  },
+  {
+    "id": 72,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 25",
+    "tema": "Tope por Funcionario",
+    "dificultad": "Intermedia",
+    "enunciado": "En la formulación de APV con Tope por funcionario, ¿qué valores puede tomar el atributo `@TipoAPV`?",
+    "opciones": [
+      "1: Con rebaja; 2: Sin rebaja",
+      "S: Obligatorio; N: Voluntario",
+      "A: AFP; B: Banco",
+      "10: Honorarios; 1: Titular"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lámina 25 detalla: `@TipoAPV : Tipo (1:Con rebaja; 2:Sin rebaja)`."
+  },
+  {
+    "id": 73,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 6",
+    "tema": "Análisis de Liquidación",
+    "dificultad": "Intermedia",
+    "enunciado": "En el Detalle liquidación, ¿qué forman los datos presupuestarios y referencias junto a cada línea de cálculo?",
+    "opciones": [
+      "El archivo de abono bancario",
+      "Parte de la combinatoria única de cada línea de cálculo",
+      "El registro de asistencia diaria",
+      "El certificado de antigüedad"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 6 indica: 'Los datos presupuestarios y referencias son parte de la combinatoria única de cada línea de cálculo'."
+  },
+  {
+    "id": 74,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 30",
+    "tema": "Prioridad de Descuentos",
+    "dificultad": "Intermedia",
+    "enunciado": "¿A qué nivel se configura la funcionalidad de Prioridad de descuentos en SIGPER?",
+    "opciones": [
+      "Por cada raíz de formulación (ej. RAIZ, RAIZSLEP)",
+      "Por cada región del país",
+      "Por cada navegador web",
+      "Por cada boleta de honorarios"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lámina 30 establece: 'La prioridad de descuentos se puede configurar por cada raíz de formulación'."
+  },
+  {
+    "id": 75,
+    "sesion": "Sesión 3",
+    "diapositiva": "Slide 55",
+    "tema": "Descuentos en Cascada",
+    "dificultad": "Intermedia",
+    "enunciado": "Si después de aplicar descuentos en cascada en todos los contratos del funcionario los topes aún no alcanzan a cubrir un descuento, ¿qué ocurre con el saldo?",
+    "opciones": [
+      "Se fuerza el descuento dejando el líquido negativo",
+      "Quedan montos pendientes (rechazados) registrados en la liquidación",
+      "Se descuenta automáticamente al jefe de unidad",
+      "Se convierte en un haber imponible"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 55 muestra que, a pesar de aplicar descuentos en cascada, si no alcanzan los topes quedan montos pendientes (rechazados)."
+  },
+  {
+    "id": 76,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 4-6",
+    "tema": "Centralización Contable",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuál es la función principal de la Centralización Contable en SIGPER?",
+    "opciones": [
+      "Calcular las horas extras de los funcionarios",
+      "Servir de puente entre Remuneraciones y Finanzas, traduciendo haberes y descuentos a un comprobante contable (voucher) con Debe y Haber cuadrados",
+      "Generar las licencias médicas en el módulo FYP",
+      "Emitir los contratos de trabajo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 4 y 6 explican que convierte las liquidaciones en un comprobante contable (voucher) de partida doble (Debe = Haber) para enviarlo a SIGFIN y SIGFE."
+  },
+  {
+    "id": 77,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 8",
+    "tema": "Definiciones Financieras",
+    "dificultad": "Básica",
+    "enunciado": "En las definiciones presupuestarias (DIPRES), ¿a qué pregunta responde la 'Fuente de financiamiento'?",
+    "opciones": [
+      "¿En qué moneda se rinde el presupuesto?",
+      "¿De qué billetera o procedencia proviene el dinero con que se financia el gasto?",
+      "¿Qué departamento interno consume el gasto?",
+      "¿Cuál es el RUT del funcionario?"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 8 indica que la Fuente de financiamiento identifica el origen o procedencia del dinero: '¿De qué billetera proviene el dinero?'."
+  },
+  {
+    "id": 78,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 9-10",
+    "tema": "Definiciones Financieras",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cuál es la diferencia entre 'Centro Financiero' (presupuestario) y 'Centro de Costo' (contable)?",
+    "opciones": [
+      "El Centro Financiero representa la unidad organizativa/repartición institucional para imputación financiera; el Centro de Costo es la unidad operativa interna (depto/área) para control de gestión",
+      "Son exactamente el mismo campo con distinto nombre",
+      "El Centro de Costo solo se usa en el sector privado",
+      "El Centro Financiero indica la moneda de pago"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las láminas 8 y 10 distinguen Centro Financiero (repartición institucional) de Centro de Costo (unidad operativa interna: departamento, sección, área para medir costo real en personal)."
+  },
+  {
+    "id": 79,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 11-13",
+    "tema": "Asociación Contable",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuándo es necesario configurar la asociación financiera en 'Unidades laborales'?",
+    "opciones": [
+      "Todos los días antes de calcular",
+      "En la parametrización inicial y principalmente cuando se crean unidades laborales nuevas o cambian",
+      "Solo cuando un funcionario renuncia",
+      "Únicamente en procesos de anticipo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 13 indica que se configura inicialmente y luego principalmente cuando se crean unidades laborales nuevas o cuando alguna cambia."
+  },
+  {
+    "id": 80,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 15-16",
+    "tema": "Conceptos Contables",
+    "dificultad": "Intermedia",
+    "enunciado": "En la asociación contable de un 'Haber Centralizable', ¿qué ocurre si falta configurar alguna Calidad Jurídica cuyos funcionarios perciben ese haber?",
+    "opciones": [
+      "El sistema usa la cuenta de Titular automáticamente",
+      "El proceso generará error (o voucher descuadrado) para esos funcionarios",
+      "El haber se transforma en descuento",
+      "No afecta el proceso de centralización"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 16 y 32 advierten que deben estar configuradas todas las Calidades Jurídicas que perciban ese concepto; si falta alguna, genera error y descuadra el voucher."
+  },
+  {
+    "id": 81,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 17-18",
+    "tema": "Conceptos Contables",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Cuál es la diferencia clave al asociar cuentas contables a un Descuento Centralizable frente a un Haber Centralizable?",
+    "opciones": [
+      "El descuento requiere desglose por cada Calidad Jurídica",
+      "El descuento requiere solo UNA cuenta banco (Cuenta 2) sin desglose por Calidad Jurídica, y se le configura Pago presupuestario = SÍ y Destinatario (Auxiliar)",
+      "El descuento no lleva Destinatario",
+      "El haber no utiliza Cuenta 1"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 17 y 18 destacan que el descuento requiere Pago presupuestario = SÍ, Destinatario (Auxiliar) y solo UNA cuenta banco (Cuenta 2), sin desglose por Calidad Jurídica."
+  },
+  {
+    "id": 82,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 20",
+    "tema": "Proceso de Centralización",
+    "dificultad": "Básica",
+    "enunciado": "En el estado del proceso de centralización, ¿qué indica el estado 'SÍ (Amarillo)' frente a 'SÍ (Rojo)'?",
+    "opciones": [
+      "Amarillo indica errores críticos; Rojo indica éxito",
+      "Amarillo indica que se deben revisar advertencias; Rojo indica errores (normalmente por asociaciones pendientes)",
+      "Ambos significan que el voucher ya fue enviado a SIGFE",
+      "Amarillo es solo para honorarios"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 20 detalla: Verde = sin problemas, Amarillo = revisar advertencias, Rojo = revisar errores (normalmente asociaciones pendientes)."
+  },
+  {
+    "id": 83,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 21",
+    "tema": "Errores Frecuentes",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué sucede si se intenta ejecutar la Centralización sin haber ejecutado previamente el proceso de remuneraciones del periodo?",
+    "opciones": [
+      "La centralización calcula las remuneraciones automáticamente",
+      "No hay montos que centralizar; siempre debe ejecutarse primero el proceso de remuneraciones y luego la centralización",
+      "Se centraliza el mes anterior por defecto",
+      "Genera un voucher con montos estimados"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 21 indica como error frecuente ejecutar la centralización sin haber procesado remuneraciones primero: no hay montos que centralizar."
+  },
+  {
+    "id": 84,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 22-23",
+    "tema": "Envío del Voucher",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué servicio debe estar habilitado para enviar los comprobantes contables desde SIGPER hacia SIGFIN, y dónde se revisa el XML enviado?",
+    "opciones": [
+      "Servicio 131; en Cola de procesos",
+      "Servicio 203; en la pestaña 'SIGFIN-Voucher' de la opción visualizar en Informar voucher",
+      "Servicio 101; en Análisis de liquidación",
+      "Servicio 300; en Reportes definibles"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 22 y 23 señalan que debe estar habilitado el Servicio 203 y que en 'Informar voucher > visualizar > tab SIGFIN-Voucher' se ven los XML enviados y su respuesta."
+  },
+  {
+    "id": 85,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 25",
+    "tema": "Consulta de Vouchers",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué información entrega el 'Excel voucher analítico'?",
+    "opciones": [
+      "Solo los totales globales por centro financiero",
+      "Detalle a nivel de cada funcionario: RUN, nombre, fórmula y monto Debe/Haber",
+      "Únicamente los aportes del empleador",
+      "El listado de boletas de honorarios rechazadas"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 25 explica que el Excel voucher analítico entrega el detalle por funcionario (RUN, nombre, fórmula, monto Debe/Haber) para identificar qué conforma cada línea contable."
+  },
+  {
+    "id": 86,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 27",
+    "tema": "Reportes de Centralización",
+    "dificultad": "Avanzada",
+    "enunciado": "En el Generador de reportes definibles (rrhhcenrep11), ¿qué diferencia hay entre Datos internos y Datos externos?",
+    "opciones": [
+      "Datos internos son fórmulas definidas como haber o descuento centralizable; Datos externos buscan datos del sistema (PeDatPer) o valores de atributos de remuneraciones",
+      "Datos internos son solo del SII y externos de AFP",
+      "No permiten totalizadores",
+      "Datos externos son solo el sueldo líquido"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lámina 27 define Datos internos (fórmulas centralizables) y Datos externos (Atributo NO: PeDatPer [1-20]; Atributo SI: valor del atributo de remuneraciones)."
+  },
+  {
+    "id": 87,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 30",
+    "tema": "Tipos de Centralización",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuántos vouchers genera el tipo de centralización '1 · Solo Devengo Presupuestario' (Vertical SIGFE / SIGFE 2)?",
+    "opciones": [
+      "9 vouchers",
+      "1 único voucher de Devengación Presupuestaria (usando solo Cuenta 1)",
+      "2 vouchers: devengo y egreso",
+      "1 voucher por cada funcionario"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 30 y 31 indican que Solo Devengo genera 1 voucher (Devengación Presupuestaria) y utiliza solo la Cuenta 1 (la Cuenta 2 no participa)."
+  },
+  {
+    "id": 88,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 31",
+    "tema": "Solo Devengo",
+    "dificultad": "Intermedia",
+    "enunciado": "En un comprobante contable de Solo Devengo, ¿en qué columna van los Haberes y en cuál van los Descuentos y el Líquido a pago?",
+    "opciones": [
+      "Haberes al Haber; Descuentos y Líquido al Debe",
+      "Haberes al Debe (gasto 531…); Descuentos y Líquido al Haber (deuda con destinatarios y funcionario)",
+      "Todo va al Debe",
+      "Líquido al Debe y Haberes al Haber"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 31 muestra: Haberes al Debe (gasto) = Descuentos + Líquido al Haber (deuda)."
+  },
+  {
+    "id": 89,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 35-36",
+    "tema": "Aportes del Empleador",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Por qué los 'Aportes del empleador' (ej. SIS, Mutual, Seguro Cesantía Empleador) aparecen dos veces en el voucher de centralización aunque no salgan en la liquidación del funcionario?",
+    "opciones": [
+      "Por un error de duplicación del sistema",
+      "Porque contablemente son un gasto de la institución (van como haber al Debe) y a la vez una deuda con la AFP/Mutual/Seguro Social (van como descuento al Haber)",
+      "Porque se descuentan del sueldo líquido del trabajador",
+      "Solo aparecen en el tipo Solo Devengo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 35 y 36 explican que los aportes del empleador aparecen como haber (gasto institucional al Debe) y como descuento (deuda con la institución previsional al Haber), manteniendo Debe = Haber."
+  },
+  {
+    "id": 90,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 33-34",
+    "tema": "Sin Pago Directo",
+    "dificultad": "Intermedia",
+    "enunciado": "En SIGFIN 2.0 con 'Pago directo = NO' (caso con 7 destinatarios), ¿qué secuencia de vouchers genera el sistema?",
+    "opciones": [
+      "1 Devengación (531 vs 21521) + 1 Pago Presupuestario (21521 vs 21499 por RUT) + 7 Egresos (21499 vs 111 Banco, 1 por destinatario) = 9 vouchers",
+      "1 Devengación + 7 Pagos = 8 vouchers",
+      "1 solo voucher de egreso",
+      "7 devengaciones separadas"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las láminas 30, 34 y 47 muestran que Sin Pago Directo genera 1 devengo + 1 pago presupuestario + 7 egresos = 9 vouchers."
+  },
+  {
+    "id": 91,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 34, 38",
+    "tema": "Sin Pago Directo",
+    "dificultad": "Avanzada",
+    "enunciado": "En el caso 'Sin Pago Directo', ¿qué función cumple la cuenta 21499 en el Voucher 2 (Pago Presupuestario)?",
+    "opciones": [
+      "Registra el gasto de horas extras",
+      "Cancela las cuentas 21521 del devengo y traspasa la deuda a una cuenta de terceros (21499) abierta por RUT de cada destinatario",
+      "Es la cuenta corriente del Banco Estado",
+      "Calcula el porcentaje de haberes"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 38 explica que el Voucher 2 salda las 21521 (saldo 0) y deja la deuda en 21499 abierta por RUT de cada destinatario para pagarse en los egresos."
+  },
+  {
+    "id": 92,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 35",
+    "tema": "Salud y Caja",
+    "dificultad": "Intermedia",
+    "enunciado": "Si en la liquidación aparece un solo descuento de Salud por $118.428 (FONASA + Caja de Compensación), ¿cómo lo trata la centralización?",
+    "opciones": [
+      "Lo envía todo al RUT de FONASA",
+      "Lo separa por destinatario: FONASA $47.371 (DSFON) y Caja Los Andes $71.057 (CCAFFON1)",
+      "Lo excluye del voucher",
+      "Lo envía al Banco Estado como líquido"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 35 destaca en 'Ojo con la salud' que en la centralización se separa por destinatario: FONASA (DSFON) y Caja Los Andes (CCAFFON1)."
+  },
+  {
+    "id": 93,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 41",
+    "tema": "Con Pago Directo",
+    "dificultad": "Intermedia",
+    "enunciado": "Cuando se activa 'Pago directo = SÍ' en SIGFIN 2.0 (7 destinatarios), ¿cuántos vouchers genera y por qué desaparece el voucher intermedio?",
+    "opciones": [
+      "Genera 8 vouchers (1 Devengación abierta por destinatario en 21521 + 7 Pagos Presupuestarios Egreso directo desde 21521 a contrapartida 111/21499)",
+      "Genera 15 vouchers",
+      "Genera 1 solo voucher",
+      "No genera devengación"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las láminas 41 y 47 explican que con Pago Directo el destinatario aparece desde el devengo en las cuentas 21521 por RUT, por lo que cada pago cancela directo su parte de las 21521 (1 + 7 = 8 vouchers)."
+  },
+  {
+    "id": 94,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 42-43",
+    "tema": "Con Pago Directo",
+    "dificultad": "Avanzada",
+    "enunciado": "En el caso 'Con Pago Directo', ¿cómo reparte SIGPER el monto de cada destinatario entre las distintas cuentas 21521?",
+    "opciones": [
+      "Divide en partes iguales entre todas las cuentas",
+      "Prorratea según el % que representa cada par de cuentas de haberes sobre el total de haberes (Monto destinatario × % de haberes de la cuenta)",
+      "Imputa todo a la cuenta de Sueldo Base",
+      "Solo prorratea los descuentos legales"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 42 y 43 explican que se calcula el % de participación de cada cuenta de haber sobre el total ($1.848.507) y se multiplica por el monto de cada destinatario."
+  },
+  {
+    "id": 95,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 43, 46",
+    "tema": "Con Pago Directo",
+    "dificultad": "Intermedia",
+    "enunciado": "Al prorratear fórmula por fórmula y redondear a pesos en Pago Directo, ¿cómo maneja SIGPER una eventual diferencia de $1 por redondeo?",
+    "opciones": [
+      "El proceso falla y no genera el voucher",
+      "Ajusta la diferencia de $1 en una línea para que filas y columnas cuadren exactamente",
+      "La envía a una cuenta de pérdidas",
+      "Deja el voucher descuadrado"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 43 indica: 'SIGPER reparte fórmula por fórmula y redondea a pesos; la diferencia de $1 la ajusta en una línea'."
+  },
+  {
+    "id": 96,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 44",
+    "tema": "Con Pago Directo",
+    "dificultad": "Intermedia",
+    "enunciado": "En el ejemplo de Pago Directo, ¿por qué el Voucher oficial tiene 48 líneas mientras el analítico tiene 83?",
+    "opciones": [
+      "Porque el oficial agrupa el analítico por cuenta + auxiliar (6 al Debe + 6 cuentas × 7 auxiliares = 48 líneas)",
+      "Porque el oficial omite los aportes del empleador",
+      "Porque el analítico duplica los haberes",
+      "Porque el oficial excluye el líquido a pago"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La lámina 44 detalla: Voucher oficial 48 líneas (6 al Debe + 6 cuentas × 7 auxiliares), agrupando el analítico (83 líneas) por cuenta + auxiliar."
+  },
+  {
+    "id": 97,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 40, 46",
+    "tema": "Control Contable",
+    "dificultad": "Intermedia",
+    "enunciado": "Al finalizar correctamente todos los vouchers de un proceso (tanto Sin Pago Directo como Con Pago Directo), ¿en qué saldo deben quedar las cuentas por pagar `21521`?",
+    "opciones": [
+      "Con saldo igual al total de haberes",
+      "Con saldo 0 (deuda cancelada)",
+      "Con saldo igual al líquido a pago",
+      "Con saldo negativo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 40 y 46 muestran que las cuentas 21521 (y 21499 en Sin Pago Directo) quedan en saldo 0 al cancelar la deuda con los pagos/egresos."
+  },
+  {
+    "id": 98,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 40, 46",
+    "tema": "Errores Típicos",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué ocurre en la centralización si un descuento centralizable tiene configurado 'Pago Presupuestario = NO'?",
+    "opciones": [
+      "Se paga dos veces",
+      "Queda devengado (o en 21521), pero NO pasa a 21499 ni genera su voucher de pago/egreso",
+      "Se suma al sueldo base",
+      "Cambia automáticamente a Pago Directo = SÍ"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las láminas 40 y 46 advierten: 'Descuento sin Pago Presupuestario = SI: no pasa a 21499 ni genera egreso / queda devengado pero no genera su voucher de pago'."
+  },
+  {
+    "id": 99,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 45",
+    "tema": "Con Pago Directo",
+    "dificultad": "Avanzada",
+    "enunciado": "En los vouchers de Pago Presupuestario Egreso con Pago Directo (ejemplo TGR), ¿cómo se compone el campo `Id.Clase`?",
+    "opciones": [
+      "Código del centro de costo + año",
+      "RUT del auxiliar + PN (ej. `60805000PN`)",
+      "Código de la fórmula + mes",
+      "Número de decreto + grado"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 45 muestra: 'Id.Clase = 60805000PN (RUT del auxiliar + PN)'."
+  },
+  {
+    "id": 100,
+    "sesion": "Sesión 4",
+    "diapositiva": "Slide 47",
+    "tema": "Comparación Final",
+    "dificultad": "Básica",
+    "enunciado": "Comparando 'Sin Pago Directo' vs. 'Con Pago Directo' sobre la misma liquidación ($1.848.507), ¿qué cambia y qué permanece igual?",
+    "opciones": [
+      "Cambia el gasto total en la cuenta 531 y el total pagado",
+      "El gasto (531) y el total pagado son idénticos ($1.848.507); lo que cambia es el camino que recorre la deuda y la cantidad de vouchers (9 vs. 8)",
+      "Con Pago Directo no se pagan imposiciones",
+      "Sin Pago Directo no usa cuentas 21521"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La lámina 47 resume: 'En ambos casos el gasto (531) y el total pagado son los mismos: 1.848.507. Lo que cambia es el camino que recorre la deuda hasta pagarse'."
+  }
+]

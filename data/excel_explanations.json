@@ -1,0 +1,869 @@
+[
+  {
+    "id": "taller-s1",
+    "titulo": "Taller Sesión 1: Elementos, Lógica y Operaciones Matemáticas",
+    "archivo": "Taller_Sesion_1.xlsx",
+    "sesion": "Sesión 1",
+    "objetivo": "Identificar elementos de formulación, evaluar condiciones lógicas (0/1) y ejecutar paso a paso fórmulas matemáticas de SIGPER.",
+    "hojas": [
+      {
+        "nombre": "Ejercicio_1",
+        "descripcion": "Descomposición de las fórmulas ASIGPROF (Asignación Profesional) y TI (Total Imponible) en sus tipos de elementos.",
+        "calculos": [
+          {
+            "id": "s1-e1-asigprof",
+            "celda": "D10 / D14",
+            "concepto": "ASIGPROF — Asignación Profesional",
+            "categoria": "Formulación SIGPER",
+            "formulaExcel": "Redondear((Redondear((TasigProf(@Grado) / 2) * (@Jornada = 22 .o. @Jornada = 22.5)) + Redondear((TasigProf(@Grado)) * (@Jornada = 44 .o. @Jornada = 45))) - ((...) % TL21633(@Cargo)))",
+            "entradas": [
+              {
+                "celda": "D10",
+                "descripcion": "Condición de aplicación",
+                "valor": "Escalafones 01,02,05,06,11,07,09,13 y Contratos <> 10,13,20,21,31,27"
+              },
+              {
+                "celda": "M30-M32",
+                "descripcion": "Elementos de cálculo",
+                "valor": "Función Redondear; Tablas TasigProf, TL21633; Atributos @Grado, @Jornada, @Cargo"
+              }
+            ],
+            "resultado": "Estructura validada",
+            "explicacionPasoAPaso": [
+              "1. Evalúa primero si la jornada es media (22 o 22.5 horas → divide TasigProf(@Grado)/2) o completa (44 o 45 horas → toma el 100% de TasigProf(@Grado)).",
+              "2. Suma ambas ramas (solo una será distinta de cero porque la comparación booleana da 1 o 0).",
+              "3. Resta el porcentaje definido en la tabla TL21633(@Cargo) usando el operador `%` de SIGPER y redondea el resultado."
+            ],
+            "reglaNegocio": "En SIGPER las comparaciones lógicas devuelven 1 (verdadero) o 0 (falso), permitiendo activar o anular ramas aritméticas en una misma fórmula."
+          },
+          {
+            "id": "s1-e1-ti",
+            "celda": "D43",
+            "concepto": "TI — Total Imponible",
+            "categoria": "Base de Cálculo",
+            "formulaExcel": "Redondear(min(ImpTrib + ImpNt, Maximpon + MaximInp))",
+            "entradas": [
+              {
+                "celda": "D42",
+                "descripcion": "Condición",
+                "valor": "1 (siempre aplica)"
+              },
+              {
+                "celda": "D43",
+                "descripcion": "Fórmulas sumadas",
+                "valor": "ImpTrib + ImpNt vs. Maximpon + MaximInp"
+              }
+            ],
+            "resultado": "Topeado al Máximo Imponible",
+            "explicacionPasoAPaso": [
+              "1. Suma los haberes imponibles tributables (ImpTrib) más los imponibles no tributables (ImpNt).",
+              "2. Compara esa suma contra el tope máximo imponible (Maximpon + MaximInp) usando la función min().",
+              "3. Redondea a entero con Redondear()."
+            ],
+            "reglaNegocio": "Ningún trabajador cotiza por sobre el tope imponible legal vigente."
+          }
+        ]
+      },
+      {
+        "nombre": "Ejercicio_2",
+        "descripcion": "Evaluación paso a paso de condiciones lógicas para Titular, Escalafón 11, Grado 12, Jornada 44, Título='S', Unidad 6310 y @RJ001=$200.000.",
+        "calculos": [
+          {
+            "id": "s1-e2-sbased",
+            "celda": "O21",
+            "concepto": "SBASED — Sueldo Base aplicable",
+            "categoria": "Evaluación Lógica",
+            "formulaExcel": "(@Escalafon = 11 .o. @Escalafon = 23) .y. (@Contrato <> 10 .y. @Contrato <> 20 .y. @Contrato <> 21)",
+            "entradas": [
+              {
+                "celda": "E4",
+                "descripcion": "@Contrato",
+                "valor": "1 (Titular)"
+              },
+              {
+                "celda": "E5",
+                "descripcion": "@Escalafon",
+                "valor": "11"
+              }
+            ],
+            "resultado": "1 (Aplica SBASED)",
+            "explicacionPasoAPaso": [
+              "1. Primer paréntesis: (@Escalafon = 11 .o. @Escalafon = 23) → (1 .o. 0) = 1.",
+              "2. Segundo paréntesis: (@Contrato <> 10 .y. <> 20 .y. <> 21) → (1 .y. 1 .y. 1) = 1.",
+              "3. Conjunción final: 1 .y. 1 = 1 (Verdadero). SBASEA, SBASEB, SBASEC y SBASEE evalúan a 0."
+            ],
+            "reglaNegocio": "Solo se valoriza la fórmula de sueldo base cuya condición evalúa a 1."
+          },
+          {
+            "id": "s1-e2-rjmon",
+            "celda": "O45",
+            "concepto": "RJMon — Retención Judicial Monto",
+            "categoria": "Evaluación Lógica",
+            "formulaExcel": "@RJ001 > 0 .y. RJHON = 0",
+            "entradas": [
+              {
+                "celda": "E10",
+                "descripcion": "@RJ001",
+                "valor": "$200.000 (> 0 → 1)"
+              },
+              {
+                "celda": "O44",
+                "descripcion": "RJHON (@Contrato = 10)",
+                "valor": "0 (porque @Contrato = 1)"
+              }
+            ],
+            "resultado": "1 (Aplica RJMon)",
+            "explicacionPasoAPaso": [
+              "1. RJHON evalúa @RJ001 > 0 .y. @Contrato = 10 → 1 .y. 0 = 0.",
+              "2. RJMon evalúa @RJ001 > 0 .y. RJHON = 0 → 1 .y. 1 = 1.",
+              "3. Al no ser Honorarios (10), corresponde aplicar el descuento de retención judicial normal."
+            ],
+            "reglaNegocio": "Las fórmulas excluyentes usan el resultado (0/1) de otra fórmula como bandera de control."
+          }
+        ]
+      },
+      {
+        "nombre": "Ejercicio_3",
+        "descripcion": "Cálculo numérico exacto de SBASE, BIENIOS, APV y AGUIFIEPAT para funcionario SAG Grado 12, 5 bienios, Plan APV 2 UF.",
+        "calculos": [
+          {
+            "id": "s1-e3-sbase",
+            "celda": "O28",
+            "concepto": "SBASE — Sueldo Base",
+            "categoria": "Haber Imponible",
+            "formulaExcel": "Redondear(((((TLSBASEI(@Grado)) / 190) * @Jornada) * 4) * (@Jornada <> 44)) + Redondear((TLSBASEI(@Grado)) * (@Jornada = 44))",
+            "entradas": [
+              {
+                "celda": "E10",
+                "descripcion": "TLSBASEI(12)",
+                "valor": "$486.705"
+              },
+              {
+                "celda": "G6",
+                "descripcion": "@Jornada",
+                "valor": "44"
+              }
+            ],
+            "resultado": "$486.705",
+            "explicacionPasoAPaso": [
+              "1. Primera rama: (@Jornada <> 44) es (44 <> 44) = 0, por lo que toda la primera suma se multiplica por 0 → 0.",
+              "2. Segunda rama: (@Jornada = 44) es 1, por lo que toma TLSBASEI(12) * 1 = 486.705.",
+              "3. Suma final: 0 + 486.705 = $486.705."
+            ],
+            "reglaNegocio": "Para jornada completa (44 h) toma directamente el valor de la tabla de grado; para otras jornadas proporcionaliza sobre 190 horas."
+          },
+          {
+            "id": "s1-e3-bienios",
+            "celda": "O34",
+            "concepto": "BIENIOS — Asignación de Antigüedad",
+            "categoria": "Haber Imponible",
+            "formulaExcel": "=ROUND(R34,0) donde R33=Q33*S33% y R34=R33*2",
+            "entradas": [
+              {
+                "celda": "Q33",
+                "descripcion": "Sbase",
+                "valor": "$486.705"
+              },
+              {
+                "celda": "S33",
+                "descripcion": "@bienio (=E7)",
+                "valor": "5"
+              }
+            ],
+            "resultado": "$48.671",
+            "explicacionPasoAPaso": [
+              "1. En SIGPER la fórmula es Redondear(Sbase % @bienio * 2), lo que equivale a 5 * 2% = 10% del Sueldo Base.",
+              "2. En Excel: R33 = 486.705 * 5% = 24.335,25.",
+              "3. R34 = 24.335,25 * 2 = 48.670,5.",
+              "4. O34 = ROUND(48.670,5, 0) = $48.671."
+            ],
+            "reglaNegocio": "Cada bienio equivale a un 2% adicional sobre el Sueldo Base, redondeado al entero más cercano."
+          },
+          {
+            "id": "s1-e3-apv",
+            "celda": "O45 / S45",
+            "concepto": "APV — Ahorro Previsional Voluntario",
+            "categoria": "Descuento",
+            "formulaExcel": "=ROUND(S44,0) donde S44=Q44*R44",
+            "entradas": [
+              {
+                "celda": "Q44",
+                "descripcion": "Constante UF (E17)",
+                "valor": "$40.820,31"
+              },
+              {
+                "celda": "R44",
+                "descripcion": "@Planapv (E8)",
+                "valor": "2"
+              },
+              {
+                "celda": "G8 / E9",
+                "descripcion": "@Unipapv / @TIPOAPV",
+                "valor": "'UF' / 1 (Con Rebaja)"
+              }
+            ],
+            "resultado": "$81.641",
+            "explicacionPasoAPaso": [
+              "1. La rama porcentual (@Unipapv = '%') evalúa a 0 porque @Unipapv = 'UF'.",
+              "2. La rama de unidad fija (@Unipapv <> '%') evalúa a 1: 2 * 40.820,31 = 81.640,62.",
+              "3. Multiplica por (@TIPOAPV = 1) → 1, y redondea con ROUND(81.640,62, 0) = $81.641."
+            ],
+            "reglaNegocio": "El APV soporta planes en porcentaje del TI o en unidades (UF/pesos) usando la función Constante()."
+          },
+          {
+            "id": "s1-e3-aguinaldo",
+            "celda": "Q63 / L58",
+            "concepto": "AGUIFIEPAT — Aguinaldo Fiestas Patrias",
+            "categoria": "Haber",
+            "formulaExcel": "Q63 = 1060493 + 52414 (TopeAgui + TopZon)",
+            "entradas": [
+              {
+                "celda": "H13",
+                "descripcion": "LiqAgui (base líquida aguinaldo)",
+                "valor": "$1.727.994"
+              },
+              {
+                "celda": "E13 / E14",
+                "descripcion": "TopeAgui / TopZon",
+                "valor": "$1.060.493 / $52.414"
+              },
+              {
+                "celda": "H14",
+                "descripcion": "AsigZon",
+                "valor": "$98.820 (> 0 → 1)"
+              },
+              {
+                "celda": "E15 / E16",
+                "descripcion": "AGMayor / AGMenor",
+                "valor": "$71.206 / $37.666"
+              }
+            ],
+            "resultado": "$37.666",
+            "explicacionPasoAPaso": [
+              "1. Calcula el tope ampliado por zona: TopeAgui + TopZon * (AsigZon > 0) = 1.060.493 + 52.414 = $1.112.907 (celda Q63).",
+              "2. Compara LiqAgui ($1.727.994) <= $1.112.907 → Falso (0), por lo que no recibe AGMayor ($71.206).",
+              "3. Evalúa $1.112.907 < $1.727.994 → Verdadero (1), aplicando AGMenor = $37.666."
+            ],
+            "reglaNegocio": "Si el funcionario percibe Asignación de Zona, el tope para acceder al aguinaldo mayor se incrementa en TopZon."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sesion2-ej1",
+    "titulo": "Sesión 2 — Ejercicio 1: Particiones, Consolidación y Leyes Sociales",
+    "archivo": "Sesion_2_Taller_Ejercicio_1.xlsx",
+    "sesion": "Sesión 2",
+    "objetivo": "Calcular una liquidación con aplicación al Funcionario cuando existe cambio de bienio a mitad de mes (2 particiones: 1-10 junio y 11-30 junio).",
+    "hojas": [
+      {
+        "nombre": "Datos",
+        "descripcion": "Parámetros de entrada del periodo Junio 2026: tablas definibles por grado 12, constantes UF/UTM/UFTOP y vigencia de bienios.",
+        "calculos": [
+          {
+            "id": "s2-datos-bienio",
+            "celda": "C17 / C18 / D18",
+            "concepto": "Vigencia de Bienios (Partición de contrato)",
+            "categoria": "Fechas / Vigencia",
+            "formulaExcel": "C17: =D17-(365*2-1) | C18: =+D17+1 | D18: =C18+(365*2)",
+            "entradas": [
+              {
+                "celda": "D17",
+                "descripcion": "Término Bienio 5",
+                "valor": "2026-06-10"
+              }
+            ],
+            "resultado": "Bienio 5 hasta 10/06/2026; Bienio 6 desde 11/06/2026",
+            "explicacionPasoAPaso": [
+              "1. El bienio 5 termina el 10-06-2026 (C17 = 11-06-2024).",
+              "2. El bienio 6 inicia al día siguiente: C18 = D17 + 1 = 11-06-2026.",
+              "3. Esto divide el mes de junio en dos bloques de cálculo: del 1 al 10 (10 días, 5 bienios) y del 11 al 30 (20 días, 6 bienios)."
+            ],
+            "reglaNegocio": "Todo cambio de atributo o agrupación de fórmula dentro del mes genera una partición interna de contrato."
+          }
+        ]
+      },
+      {
+        "nombre": "Detalle-Calculos_Resultados",
+        "descripcion": "Desarrollo completo de las 2 particiones al Contrato y la 3ª iteración consolidada al Funcionario (Haberes, Topes, AFP, Salud e Impuesto Único).",
+        "calculos": [
+          {
+            "id": "s2-res-dias",
+            "celda": "F14 / F15",
+            "concepto": "Días trabajados por partición",
+            "categoria": "Parámetros de Tiempo",
+            "formulaExcel": "F14: =E14-D14+1 | F15: =E15-D15+1",
+            "entradas": [
+              {
+                "celda": "D14:E14",
+                "descripcion": "Partición 1",
+                "valor": "01-06-2026 al 10-06-2026"
+              },
+              {
+                "celda": "D15:E15",
+                "descripcion": "Partición 2",
+                "valor": "11-06-2026 al 30-06-2026"
+              }
+            ],
+            "resultado": "10 días y 20 días (Total 30)",
+            "explicacionPasoAPaso": [
+              "1. Partición 1: 10 - 1 + 1 = 10 días.",
+              "2. Partición 2: 30 - 11 + 1 = 20 días.",
+              "3. Ambos bloques suman la base mensual de 30 días."
+            ],
+            "reglaNegocio": "Cada partición proporciona los haberes configurados con Proporcionalidad = SI según sus días."
+          },
+          {
+            "id": "s2-res-part1",
+            "celda": "E21:E26",
+            "concepto": "Haberes Partición 1 (10 días, 5 bienios = 10%)",
+            "categoria": "Haber Imponible",
+            "formulaExcel": "E21=ROUND(Datos!E$4/30*F$14,0) | E22=ROUND(E21*(I$14*2)%,0) | E25=ROUND((E21+E22)*13.05%,0)",
+            "entradas": [
+              {
+                "celda": "Datos!E4",
+                "descripcion": "TSBASE(12)",
+                "valor": "$486.705"
+              },
+              {
+                "celda": "Datos!E5:E7",
+                "descripcion": "L18675 / L18566 / L19185",
+                "valor": "$61.382 / $24.224 / $424.674"
+              }
+            ],
+            "resultado": "SBASE $162.235 | BIENIOS $16.224 | L18675 $20.461 | L18566 $8.075 | DL3501 $23.289 | L19185 $141.558",
+            "explicacionPasoAPaso": [
+              "1. SBASE (E21): 486.705 / 30 * 10 = $162.235.",
+              "2. BIENIOS (E22): 162.235 * (5 * 2)% = 162.235 * 10% = $16.224.",
+              "3. L18675A10 (E23): 61.382 / 30 * 10 = $20.461.",
+              "4. L18566 (E24): 24.224 / 30 * 10 = $8.075.",
+              "5. DL3501 (E25): (162.235 + 16.224) * 13.05% = $23.289.",
+              "6. L19185A18 (E26): 424.674 / 30 * 10 = $141.558."
+            ],
+            "reglaNegocio": "En la partición 1 se aplica 10% de bienios (5 bienios × 2%)."
+          },
+          {
+            "id": "s2-res-part2",
+            "celda": "E39:E44",
+            "concepto": "Haberes Partición 2 (20 días, 6 bienios = 12%)",
+            "categoria": "Haber Imponible",
+            "formulaExcel": "E39=ROUND(Datos!E$4/30*F$15,0) | E40=ROUND(E39*(I$15*2)%,0) | E43=ROUND((E39+E40)*13.05%,0)",
+            "entradas": [
+              {
+                "celda": "F15",
+                "descripcion": "Días partición 2",
+                "valor": "20"
+              },
+              {
+                "celda": "I15",
+                "descripcion": "@Bienio",
+                "valor": "6 (12%)"
+              }
+            ],
+            "resultado": "SBASE $324.470 | BIENIOS $38.936 | L18675 $40.921 | L18566 $16.149 | DL3501 $47.424 | L19185 $283.116",
+            "explicacionPasoAPaso": [
+              "1. SBASE (E39): 486.705 / 30 * 20 = $324.470.",
+              "2. BIENIOS (E40): 324.470 * (6 * 2)% = 324.470 * 12% = $38.936.",
+              "3. L18675A10 (E41): 61.382 / 30 * 20 = $40.921.",
+              "4. L18566 (E42): 24.224 / 30 * 20 = $16.149.",
+              "5. DL3501 (E43): (324.470 + 38.936) * 13.05% = $47.424.",
+              "6. L19185A18 (E44): 424.674 / 30 * 20 = $283.116."
+            ],
+            "reglaNegocio": "Al cumplir el 6° bienio el 11 de junio, los últimos 20 días se calculan al 12%."
+          },
+          {
+            "id": "s2-res-consolidado",
+            "celda": "E57:E63",
+            "concepto": "Consolidación de Haberes al Funcionario",
+            "categoria": "Totalizador",
+            "formulaExcel": "E57..E62 = Partición 1 + Partición 2 | E63 = SUM(E57:E62)",
+            "entradas": [
+              {
+                "celda": "E21:E26",
+                "descripcion": "Totales Partición 1",
+                "valor": "$371.842"
+              },
+              {
+                "celda": "E39:E44",
+                "descripcion": "Totales Partición 2",
+                "valor": "$751.016"
+              }
+            ],
+            "resultado": "$1.122.858 (Total Haberes Imponibles)",
+            "explicacionPasoAPaso": [
+              "1. SBASE: 162.235 + 324.470 = $486.705.",
+              "2. BIENIOS: 16.224 + 38.936 = $55.160.",
+              "3. L18675A10: 20.461 + 40.921 = $61.382.",
+              "4. L18566: 8.075 + 16.149 = $24.224.",
+              "5. DL3501: 23.289 + 47.424 = $70.713.",
+              "6. L19185A18: 141.558 + 283.116 = $424.674.",
+              "7. Suma total (E63): $1.122.858."
+            ],
+            "reglaNegocio": "En procesos con aplicación al Funcionario, la 3ª iteración consolida las particiones de Contrato antes de calcular descuentos legales."
+          },
+          {
+            "id": "s2-res-leyes",
+            "celda": "N56:N63 / J57:J59",
+            "concepto": "Tope Imponible, AFP (DP), Salud (DS) y Tributable",
+            "categoria": "Descuento Legal",
+            "formulaExcel": "N56=ROUND(J4*J6,0) | N58=MIN(N57,N56) | N59=ROUND(N58*E8%,0) | N60=ROUND(N57*7%,0) | N63=N57-J57-N62",
+            "entradas": [
+              {
+                "celda": "Datos!J4 / J6",
+                "descripcion": "UF / UFTOP",
+                "valor": "$40.820,31 / 90 UF"
+              },
+              {
+                "celda": "Datos!E8",
+                "descripcion": "Tasa AFP Modelo",
+                "valor": "10,58%"
+              },
+              {
+                "celda": "Datos!E26",
+                "descripcion": "Plan Salud FONASA",
+                "valor": "7%"
+              }
+            ],
+            "resultado": "MAXIMPON $3.673.828 | DP $118.798 | DS $78.600 | TRIBUTABLE $925.460",
+            "explicacionPasoAPaso": [
+              "1. MAXIMPON (N56): 40.820,31 × 90 = $3.673.828.",
+              "2. Base imponible topeada (N58): MIN(1.122.858, 3.673.828) = $1.122.858.",
+              "3. DP — AFP Modelo (N59): ROUND(1.122.858 × 10,58%, 0) = $118.798.",
+              "4. DS — Salud 7% (N60 / J58): ROUND(1.122.858 × 7%, 0) = $78.600.",
+              "5. Total Tributable (N63): 1.122.858 - 118.798 (DP) - 78.600 (DS topeado) = $925.460."
+            ],
+            "reglaNegocio": "El Total Tributable se obtiene restando al Total Imponible las cotizaciones previsionales y de salud hasta su tope legal."
+          },
+          {
+            "id": "s2-res-iur-lap",
+            "celda": "O70:O75 / E68",
+            "concepto": "Impuesto Único (IUR) y Líquido a Pago (LAP)",
+            "categoria": "Impuesto / Totalizador",
+            "formulaExcel": "O71=O70/Datos!J5 | O75=ROUND(MAX(0,(O70*O72)-O74),0) | E68=E67-J67",
+            "entradas": [
+              {
+                "celda": "O70",
+                "descripcion": "Base Tributable",
+                "valor": "$925.460"
+              },
+              {
+                "celda": "Datos!J5",
+                "descripcion": "UTM Junio 2026",
+                "valor": "$71.506"
+              },
+              {
+                "celda": "J65",
+                "descripcion": "Descuento COOPEUCH (CHILCON)",
+                "valor": "$274.260"
+              }
+            ],
+            "resultado": "IUR $0 | TD $471.658 | LAP $651.200",
+            "explicacionPasoAPaso": [
+              "1. Renta tributable en UTM (O71): 925.460 / 71.506 = 12,9424 UTM.",
+              "2. Como 12,9424 <= 13,5 UTM (tramo exento), el factor (O72) es 0 y la rebaja (O73) es 0 → IUR = $0.",
+              "3. Total Descuentos (J67): 197.398 (legales) + 274.260 (varios) = $471.658.",
+              "4. Líquido a Pago (E68): 1.122.858 - 471.658 = $651.200."
+            ],
+            "reglaNegocio": "El Impuesto Único se determina convirtiendo la base tributable a UTM y aplicando la tabla de tramos y rebaja fija."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sesion3-ej1",
+    "titulo": "Sesión 3 — Ejercicio 1: Prioridad Aumento Cooperativa (15% + 10%)",
+    "archivo": "Sesion_3_Taller_Ejercicio_1.xlsx",
+    "sesion": "Sesión 3",
+    "objetivo": "Aplicar Movimientos Informados y Prioridad de Descuentos No Obligatorios (15% Tope General + 10% Aumento Cooperativa).",
+    "hojas": [
+      {
+        "nombre": "Resultado",
+        "descripcion": "Liquidación con TH = $77.796, descuentos legales = $15.077, CHILCON propuesto $11.000 (No coop.) y CPCHP propuesto $150.000 (Cooperativa).",
+        "calculos": [
+          {
+            "id": "s3-e1-topes",
+            "celda": "I37 / I39 / I40",
+            "concepto": "Cálculo de Topes No Obligatorios (15% y 10%)",
+            "categoria": "Prioridad de Descuentos",
+            "formulaExcel": "I37=ROUND(D$27*15%,0) | I39=ROUND(D$27*10%,0) | I40=+I37+I39",
+            "entradas": [
+              {
+                "celda": "D27",
+                "descripcion": "TH (Total Haberes)",
+                "valor": "$77.796"
+              }
+            ],
+            "resultado": "Tope General $11.669 | Aumento Coop. $7.780 | Tope Total $19.449",
+            "explicacionPasoAPaso": [
+              "1. Tope General (15% del TH): ROUND(77.796 × 15%, 0) = $11.669.",
+              "2. Tope Aumento Cooperativa (10% del TH): ROUND(77.796 × 10%, 0) = $7.780.",
+              "3. Capacidad máxima combinada para descuentos no obligatorios (I40): 11.669 + 7.780 = $19.449."
+            ],
+            "reglaNegocio": "Los descuentos no obligatorios sin origen cooperativa solo pueden usar el Tope General (15%); los de cooperativa pueden usar el remanente del 15% más el 10% adicional."
+          },
+          {
+            "id": "s3-e1-chilcon",
+            "celda": "O24 / I24 / P24",
+            "concepto": "CHILCON (Prioridad 12, No Oblig., No Coop.)",
+            "categoria": "Prioridad de Descuentos",
+            "formulaExcel": "I24=+O24+R24",
+            "entradas": [
+              {
+                "celda": "N24",
+                "descripcion": "Propuesto en Tope General",
+                "valor": "$11.000"
+              },
+              {
+                "celda": "I37",
+                "descripcion": "Tope General disponible",
+                "valor": "$11.669"
+              }
+            ],
+            "resultado": "Aplicado $11.000 | Rechazo $0",
+            "explicacionPasoAPaso": [
+              "1. Al tener Prioridad 12, se evalúa antes que CPCHP (Prioridad 13).",
+              "2. Como $11.000 <= $11.669, se aplica íntegramente dentro del Tope General (O24 = $11.000).",
+              "3. Remanente disponible del Tope General: 11.669 - 11.000 = $669."
+            ],
+            "reglaNegocio": "Los descuentos se procesan en orden ascendente de prioridad (1 primero, luego 12, luego 13)."
+          },
+          {
+            "id": "s3-e1-cpchp",
+            "celda": "O25 / P25 / R25 / S25 / I25",
+            "concepto": "CPCHP COOPEUCH (Prioridad 13, No Oblig., Cooperativa)",
+            "categoria": "Prioridad de Descuentos",
+            "formulaExcel": "P25=N25-O25 | Q25=+P25 | S25=Q25-R25 | I25=+O25+R25",
+            "entradas": [
+              {
+                "celda": "N25",
+                "descripcion": "Monto Propuesto",
+                "valor": "$150.000"
+              },
+              {
+                "celda": "O25",
+                "descripcion": "Cupo restante Tope General (15%)",
+                "valor": "$669"
+              },
+              {
+                "celda": "R25",
+                "descripcion": "Cupo Aumento Cooperativa (10%)",
+                "valor": "$7.780"
+              }
+            ],
+            "resultado": "Aplicado $8.449 | Rechazo final $141.551",
+            "explicacionPasoAPaso": [
+              "1. En Tope General (15%) solo quedan $669 disponibles (O25 = 669), rechazando P25 = 150.000 - 669 = $149.331.",
+              "2. Por ser origen Cooperativa='S', el rechazo de $149.331 pasa al tramo Aumento Cooperativa (10%), donde aplica hasta el tope de $7.780 (R25 = 7.780).",
+              "3. Total descontado (I25): 669 + 7.780 = $8.449.",
+              "4. Rechazo definitivo (S25 / I33): 149.331 - 7.780 = $141.551."
+            ],
+            "reglaNegocio": "Se cumple la identidad Cálculo Mes ($8.449) + Rechazo ($141.551) = Propuesto ($150.000), y LAP final = 77.796 - 34.526 = $43.270."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sesion3-ej2",
+    "titulo": "Sesión 3 — Ejercicio 2: Prioridad General (LAP >= 0) + Cooperativa",
+    "archivo": "Sesion_3_Taller_Ejercicio_2.xlsx",
+    "sesion": "Sesión 3",
+    "objetivo": "Combinar Prioridad General (mínimo de LAP = total EXENTOS = $0) con Prioridad No Obligatorios en una liquidación al Funcionario.",
+    "hojas": [
+      {
+        "nombre": "Resultado",
+        "descripcion": "TH = $424.046; Legales Prioridad 1 = $83.450 (DP $47.324 + DS $36.126); Retenciones Judiciales Prioridad 2 = $250.000 y $200.000; CPCHP Prioridad 13 = $50.000.",
+        "calculos": [
+          {
+            "id": "s3-e2-rj",
+            "celda": "I18 / I19 / P19 / I31",
+            "concepto": "Prioridad General sobre Retenciones Judiciales (RJ001)",
+            "categoria": "Prioridad General",
+            "formulaExcel": "P19=N19-O19 | I31=+P18+P19",
+            "entradas": [
+              {
+                "celda": "D26",
+                "descripcion": "Total Haberes (TH)",
+                "valor": "$424.046"
+              },
+              {
+                "celda": "I16:I17",
+                "descripcion": "DP + DS (Prioridad 1)",
+                "valor": "$47.324 + $36.126 = $83.450"
+              },
+              {
+                "celda": "N18 / N19",
+                "descripcion": "RJ001 #1 y #2 propuestos",
+                "valor": "$250.000 y $200.000"
+              },
+              {
+                "celda": "D36",
+                "descripcion": "Tope mínimo LAP (EXENTOS)",
+                "valor": "$0"
+              }
+            ],
+            "resultado": "RJ #1 aplicado $250.000 | RJ #2 aplicado $90.596 (Rechazo $109.404)",
+            "explicacionPasoAPaso": [
+              "1. Tras descontar DP y DS ($83.450), queda disponible: 424.046 - 83.450 = $340.596.",
+              "2. La 1ª retención judicial ($250.000) cabe completa: remanente = 340.596 - 250.000 = $90.596.",
+              "3. Para la 2ª retención ($200.000), solo alcanzan $90.596 (O19 = 90.596) para no bajar de LAP $0.",
+              "4. Monto rechazado de RJ001 (P19 / I31): 200.000 - 90.596 = $109.404."
+            ],
+            "reglaNegocio": "La Prioridad General garantiza que el líquido a pagar nunca sea inferior al piso configurado (en este caso $0), truncando el descuento que exceda el saldo."
+          },
+          {
+            "id": "s3-e2-cpchp",
+            "celda": "I24 / P24 / S24 / I32",
+            "concepto": "Rechazo total de CPCHP por Prioridad General y Aumento Cooperativa",
+            "categoria": "Prioridad de Descuentos",
+            "formulaExcel": "I24=+O24+R24 | P24=N24-O24 | S24=Q24-R24 | I36=ROUND(D$26*15%,0) | I38=ROUND(D$26*10%,0)",
+            "entradas": [
+              {
+                "celda": "D27",
+                "descripcion": "LAP disponible tras RJ001",
+                "valor": "$0"
+              },
+              {
+                "celda": "N24",
+                "descripcion": "CPCHP Propuesto",
+                "valor": "$50.000"
+              }
+            ],
+            "resultado": "CPCHP aplicado $0 | Rechazado $50.000",
+            "explicacionPasoAPaso": [
+              "1. Aunque teóricamente el 15% es $63.607 (I36) y el 10% es $42.405 (I38), los descuentos obligatorios previos (Prioridad 1 y 2) ya consumieron el 100% de los $424.046.",
+              "2. Al quedar $0 de alcance líquido, CPCHP (Prioridad 13) aplica $0 y rechaza los $50.000 completos (I32)."
+            ],
+            "reglaNegocio": "La Prioridad General prevalece sobre los cupos porcentuales: nunca se puede aplicar un descuento si el LAP ya alcanzó el mínimo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sesion3-ej3",
+    "titulo": "Sesión 3 — Ejercicio 3: Tope por Funcionario y Descuentos en Cascada (SLEP)",
+    "archivo": "Sesion_3_Taller_Ejercicio_3.xlsx",
+    "sesion": "Sesión 3",
+    "objetivo": "Calcular 3 liquidaciones de contrato de un docente SLEP aplicando Tope por Funcionario (APVSLEP) y Descuentos en Cascada (CCAFHEROES2 y CPCHPSLE).",
+    "hojas": [
+      {
+        "nombre": "Resultados",
+        "descripcion": "3 contratos de 2h, 2h y 20h. Movimientos informados: BONPROTJUN $96.672, CCAFHEROES2 $150.000, CPCHPSLE $250.000.",
+        "calculos": [
+          {
+            "id": "s3-e3-c1",
+            "celda": "C57 / G57 / G59:G61 / G68:G70",
+            "concepto": "Correlativo 1 (2h + Bono): Tope APV y 1ª Cascada",
+            "categoria": "Tope y Cascada",
+            "formulaExcel": "L52=ROUND(C57*10%,0) | L61=ROUND(C63*1%,0) | N59=L59-M59",
+            "entradas": [
+              {
+                "celda": "C57",
+                "descripcion": "THSLEP Correlativo 1",
+                "valor": "$204.464"
+              },
+              {
+                "celda": "G50:G52",
+                "descripcion": "Legales (DSSLEP + APVSLEP + CASLEP2)",
+                "valor": "$14.312 + $50.000 + $20.446 = $84.758"
+              }
+            ],
+            "resultado": "LAP $0 | CCAF aplicado $119.706 (rechaza $30.294) | CPCHPSLE rechaza $250.000 | FCPROF rechaza $2.045",
+            "explicacionPasoAPaso": [
+              "1. APVSLEP ($50.000) tiene Tope por Funcionario y se descuenta completo en Correlativo 1.",
+              "2. CASLEP2 = 10% de $204.464 = $20.446 (L52). Total legales = $84.758.",
+              "3. Disponible para varios: 204.464 - 84.758 = $119.706.",
+              "4. CCAFHEROES2 ($150.000) aplica $119.706 y rechaza $30.294 (G68), que pasan en cascada al Correlativo 2.",
+              "5. CPCHPSLE ($250.000) y FCPROF (1% = $2.045) quedan rechazados en G69 y G70 para el siguiente contrato."
+            ],
+            "reglaNegocio": "En aplicación al Contrato, los rechazos de una liquidación se arrastran automáticamente como monto propuesto en la siguiente liquidación del mismo funcionario."
+          },
+          {
+            "id": "s3-e3-c2",
+            "celda": "C97 / L93:N95 / G103:G104",
+            "concepto": "Correlativo 2 (2h): Sin APV y 2ª Cascada",
+            "categoria": "Tope y Cascada",
+            "formulaExcel": "L93=+G68 | L94=+G69 | L95=G70+ROUND(C97*1%,0)",
+            "entradas": [
+              {
+                "celda": "C97",
+                "descripcion": "THSLEP Correlativo 2",
+                "valor": "$107.792"
+              },
+              {
+                "celda": "G91",
+                "descripcion": "Legales (DSSLEP $7.545 + CASLEP2 $10.779)",
+                "valor": "$18.324"
+              }
+            ],
+            "resultado": "CCAF saldo $30.294 aplicado 100% | CPCHPSLE aplicado $59.174 (rechaza $190.826)",
+            "explicacionPasoAPaso": [
+              "1. APVSLEP = $0 porque ya se cumplió el Tope por Funcionario en el Correlativo 1.",
+              "2. Disponible para varios: 107.792 - 18.324 = $89.468.",
+              "3. CCAFHEROES2 recibe el saldo de $30.294 (L93) y se paga completo (rechazo $0).",
+              "4. Quedan 89.468 - 30.294 = $59.174, que se aplican a CPCHPSLE, dejando un rechazo de $190.826 (G103) para el Correlativo 3.",
+              "5. FCPROF acumula el rechazo previo ($2.045) + 1% de $107.792 ($1.078) = $3.123 rechazados (G104)."
+            ],
+            "reglaNegocio": "El tope por funcionario evita descontar dos veces el APV de $50.000 en el segundo contrato."
+          },
+          {
+            "id": "s3-e3-c3",
+            "celda": "C130 / G127 / N127 / P127 / C131",
+            "concepto": "Correlativo 3 (20h): Absorción final de Cascada + Aumento Coop.",
+            "categoria": "Tope y Cascada",
+            "formulaExcel": "L127=+G103 | G127=+M127+P127 | L128=G104+ROUND(C130*1%,0) | G141=ROUND(C130*15%,0) | G143=ROUND(C130*10%,0)",
+            "entradas": [
+              {
+                "celda": "C130",
+                "descripcion": "THSLEP Correlativo 3",
+                "valor": "$1.077.917"
+              },
+              {
+                "celda": "G124",
+                "descripcion": "Legales (DSSLEP + IURSLEP + CASLEP2)",
+                "valor": "$194.347"
+              },
+              {
+                "celda": "L127",
+                "descripcion": "Saldo CPCHPSLE desde Correlativo 2",
+                "valor": "$190.826"
+              }
+            ],
+            "resultado": "CPCHPSLE $190.826 aplicado 100% ($161.688 General + $29.138 Aumento Coop.) | LAP $692.744",
+            "explicacionPasoAPaso": [
+              "1. El Tope General (15% de $1.077.917) es $161.688 (G141) y el Aumento Cooperativa (10%) es $107.792 (G143).",
+              "2. CPCHPSLE ($190.826) absorbe los $161.688 del Tope General (M127), quedando un remanente de $29.138 (N127).",
+              "3. Por ser Cooperativa, esos $29.138 entran íntegramente en el Tope Aumento Cooperativa ($107.792), logrando aplicar los $190.826 completos (G127 = $190.826, rechazo $0).",
+              "4. FCPROF acumula $13.902, pero al no tener cupo en Tope General (ya usado por CPCHPSLE) queda rechazado.",
+              "5. Líquido a Pago final del Correlativo 3 (C131): 1.077.917 - 385.173 = $692.744."
+            ],
+            "reglaNegocio": "La cascada permite que contratos de mayor renta absorban los descuentos rechazados en contratos pequeños."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sesion4-ej1",
+    "titulo": "Sesión 4 — Ejercicio 1: Centralización Contable (3 Escenarios)",
+    "archivo": "Sesion_4_Taller_Ejercicio_1.xlsx",
+    "sesion": "Sesión 4",
+    "objetivo": "Construir manualmente los vouchers contables de una liquidación contrata ($1.000.000 con aporte empleador incluido) bajo Solo Devengo, SIGFIN 2.0 sin Pago Directo y SIGFIN 2.0 con Pago Directo.",
+    "hojas": [
+      {
+        "nombre": "Ejercicio",
+        "descripcion": "Liquidación base: SBASE $680.000, ASIGPROF $200.000, HOREXT $100.000, SEGCESEMP $20.000 (aporte empleador) | Descuentos: DP $110.000 + SEGCESEMPD $20.000 (AFP), DS $70.000 (FONASA), IUR $10.000 (TGR), LAP $790.000 (Banco Estado).",
+        "calculos": [
+          {
+            "id": "s4-e1-cuadratura",
+            "celda": "D17 / D18",
+            "concepto": "Cuadratura Base Liquidación + Aporte Empleador",
+            "categoria": "Contabilidad",
+            "formulaExcel": "D17=SUM(D8:D11) | D18=SUM(D12:D16)",
+            "entradas": [
+              {
+                "celda": "D8:D11",
+                "descripcion": "Haberes + Aporte Empleador",
+                "valor": "680.000 + 200.000 + 100.000 + 20.000"
+              },
+              {
+                "celda": "D12:D16",
+                "descripcion": "Descuentos + Aporte + LAP",
+                "valor": "110.000 + 70.000 + 10.000 + 20.000 + 790.000"
+              }
+            ],
+            "resultado": "Total Debe = Total Haber = $1.000.000",
+            "explicacionPasoAPaso": [
+              "1. El aporte del empleador (SEGCESEMP $20.000) no se muestra en la liquidación del trabajador, pero se centraliza doble: como gasto (haber) y como deuda con la AFP (descuento SEGCESEMPD).",
+              "2. Total Haberes centralizables (D17) = $1.000.000.",
+              "3. Total Descuentos + Líquido (D18) = $1.000.000."
+            ],
+            "reglaNegocio": "Todo comprobante contable debe cumplir partida doble: Total Debe = Total Haber."
+          },
+          {
+            "id": "s4-e1-partea",
+            "celda": "C24:C32",
+            "concepto": "Parte A — Solo Devengo Presupuestario (1 Voucher)",
+            "categoria": "Contabilidad",
+            "formulaExcel": "Usa solo Cuenta 1: Haberes al Debe (531…) | Descuentos y LAP al Haber (21521 / 111)",
+            "entradas": [
+              {
+                "celda": "C24:C27",
+                "descripcion": "Cuentas 1 Haberes (531…)",
+                "valor": "531010101 ($680k), 531010106 ($200k), 531020405 ($100k), 531010202 ($20k)"
+              },
+              {
+                "celda": "C28:C32",
+                "descripcion": "Cuentas 1 Descuentos/LAP",
+                "valor": "AFP $130.000 (21521), FONASA $70.000 (21521), TGR $10.000 (21521), LAP $790.000 (111)"
+              }
+            ],
+            "resultado": "1 Voucher único cuadrado en $1.000.000",
+            "explicacionPasoAPaso": [
+              "1. En Solo Devengo la Cuenta 2 no participa.",
+              "2. Los 4 haberes se cargan al Debe en sus cuentas de gasto 531… ($1.000.000).",
+              "3. AFP Modelo agrupa DP ($110.000) + SEGCESEMPD ($20.000) = $130.000 al Haber en 21521 con auxiliar AFP.",
+              "4. FONASA ($70.000) y TGR ($10.000) van al Haber en 21521 con sus RUT auxiliares, y LAP ($790.000) al Haber en 11102010100000."
+            ],
+            "reglaNegocio": "Solo Devengo genera un único comprobante sin vouchers posteriores de pago ni egreso."
+          },
+          {
+            "id": "s4-e1-parteb",
+            "celda": "D24:E32",
+            "concepto": "Parte B — SIGFIN 2.0 sin Pago Directo (6 Vouchers)",
+            "categoria": "Contabilidad",
+            "formulaExcel": "V1 Devengo (531 vs 21521) → V2 Pago Presup. (21521 vs 21499 por RUT) → V3..V6 Egresos (21499 vs 111)",
+            "entradas": [
+              {
+                "celda": "D24:E27",
+                "descripcion": "Pares 531 / 21521 de Haberes",
+                "valor": "4 cuentas de gasto contra 4 cuentas espejo por pagar"
+              },
+              {
+                "celda": "D28:E32",
+                "descripcion": "Destinatarios (4)",
+                "valor": "AFP ($130.000), FONASA ($70.000), TGR ($10.000), Banco Estado ($790.000)"
+              }
+            ],
+            "resultado": "6 Vouchers totales (1 Devengo + 1 Pago + 4 Egresos); 21521 y 21499 quedan en saldo $0",
+            "explicacionPasoAPaso": [
+              "1. Voucher 1 (Devengación): carga las 4 cuentas 531 al Debe y abona sus 4 espejos 21521 al Haber por $1.000.000 (sin auxiliar).",
+              "2. Voucher 2 (Pago Presupuestario): salda las 4 cuentas 21521 al Debe ($1.000.000) y abona la cuenta 21499000000000 abierta por los 4 RUT destinatarios.",
+              "3. Vouchers 3 a 6 (Egresos): un voucher por destinatario cargando 21499 al Debe y abonando Banco 11102010100000 al Haber."
+            ],
+            "reglaNegocio": "Sin Pago Directo separa el registro del gasto (sin RUT) del traspaso de deuda a terceros (21499 con RUT)."
+          },
+          {
+            "id": "s4-e1-partec",
+            "celda": "F24:G32 / B94",
+            "concepto": "Parte C — SIGFIN 2.0 con Pago Directo (Prorrateo % Haberes)",
+            "categoria": "Contabilidad",
+            "formulaExcel": "B94=SUM(B90:B93) ($1.000.000) | Prorrateo: SBASE 68%, ASIGPROF 20%, HOREXT 10%, SEGCESEMP 2%",
+            "entradas": [
+              {
+                "celda": "D8:D11",
+                "descripcion": "Pesos de Haberes sobre $1.000.000",
+                "valor": "68%, 20%, 10% y 2%"
+              },
+              {
+                "celda": "D12:D16",
+                "descripcion": "4 Destinatarios",
+                "valor": "AFP $130k | FONASA $70k | TGR $10k | Banco Estado $790k"
+              }
+            ],
+            "resultado": "5 Vouchers (1 Devengo abierto por RUT + 4 Pagos Directos); 21521 en saldo $0",
+            "explicacionPasoAPaso": [
+              "1. Como el total de haberes es $1.000.000, los porcentajes de reparto son exactos: SBASE 68%, ASIGPROF 20%, HOREXT 10% y Aporte 2%.",
+              "2. En el Voucher 1 (Devengo), cada una de las 4 cuentas 21521 se abre por los 4 destinatarios aplicando ese % (ej. AFP $130.000 = $88.400 en SBASE + $26.000 en ASIGPROF + $13.000 en HOREXT + $2.600 en Aporte).",
+              "3. Se generan 4 vouchers de Pago Directo (uno por destinatario) que cancelan sus 4 líneas 21521 al Debe contra la cuenta 11102010100000 (Banco) al Haber."
+            ],
+            "reglaNegocio": "Con Pago Directo desaparece el voucher intermedio 21499 y cada destinatario se prorratea desde el devengo según la composición porcentual de los haberes."
+          }
+        ]
+      }
+    ]
+  }
+]
