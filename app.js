@@ -39,8 +39,7 @@ function el(tag, className, text) {
 // Theme setup
 function initTheme() {
   const saved = localStorage.getItem(THEME_KEY);
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initial = saved || (prefersDark ? 'dark' : 'light');
+  const initial = saved || 'light';
   document.documentElement.setAttribute('data-theme', initial);
   const btn = document.getElementById('themeToggle');
   btn.textContent = initial === 'dark' ? 'Modo Claro' : 'Modo Oscuro';
