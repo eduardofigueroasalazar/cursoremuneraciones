@@ -237,7 +237,15 @@ function renderQuiz() {
   nav.appendChild(btnNext);
   card.appendChild(nav);
 
-  // Quick jump dots
+  // Quick jump dots (collapsible on mobile)
+  const jumpDetails = document.createElement('details');
+  jumpDetails.className = 'jump-details';
+  if (window.innerWidth >= 640) {
+    jumpDetails.open = true;
+  }
+  const jumpSummary = el('summary', 'jump-summary', `Mapa de preguntas (${state.filteredQuestions.length})`);
+  jumpDetails.appendChild(jumpSummary);
+
   const jump = el('div', 'jump-row');
   state.filteredQuestions.forEach((item, idx) => {
     const dot = el('button', 'dot-btn', String(idx + 1));
@@ -253,7 +261,8 @@ function renderQuiz() {
     });
     jump.appendChild(dot);
   });
-  card.appendChild(jump);
+  jumpDetails.appendChild(jump);
+  card.appendChild(jumpDetails);
 
   container.appendChild(card);
   updateStats();
@@ -387,7 +396,9 @@ function buildCalcCard(calc, contextLabel) {
       tbody.appendChild(tr);
     });
     tbl.appendChild(tbody);
-    card.appendChild(tbl);
+    const tblWrap = el('div', 'table-wrap');
+    tblWrap.appendChild(tbl);
+    card.appendChild(tblWrap);
   }
 
   const stepsTitle = el('strong', '', 'Explicación paso a paso:');
