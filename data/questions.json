@@ -1601,7 +1601,7 @@
   },
   {
     "id": 101,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 1 · Slide 16",
     "tema": "Formulación",
     "dificultad": "Básica",
@@ -1617,7 +1617,7 @@
   },
   {
     "id": 102,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 1 · Slide 33",
     "tema": "Detalle de Formulación",
     "dificultad": "Básica",
@@ -1633,7 +1633,7 @@
   },
   {
     "id": 103,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 1 · Slide 31",
     "tema": "Operadores Lógicos",
     "dificultad": "Básica",
@@ -1649,7 +1649,7 @@
   },
   {
     "id": 104,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 1 · Slides 27-28",
     "tema": "Elementos de Formulación",
     "dificultad": "Básica",
@@ -1665,11 +1665,11 @@
   },
   {
     "id": 105,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 1 · Slides 30-32",
-    "tema": "Evaluación Lógica (Forma A)",
+    "tema": "Evaluación Lógica",
     "dificultad": "Intermedia",
-    "enunciado": "[Forma A: @JORNADA=44, @BIENIO=5, @CONTRATO=1] Condición: ((@JORNADA / 2 >= 22) .y. (@BIENIO + 1 < 6)) .o. ((@CONTRATO <> 10) .y. (@BIENIO * 2 = 10)). ¿Qué resultado entrega?",
+    "enunciado": "Con @JORNADA=44, @BIENIO=5, @CONTRATO=1, evalúa la condición: ((@JORNADA / 2 >= 22) .y. (@BIENIO + 1 < 6)) .o. ((@CONTRATO <> 10) .y. (@BIENIO * 2 = 10)). ¿Qué resultado entrega?",
     "opciones": [
       "0 (falso).",
       "1 (verdadero).",
@@ -1677,15 +1677,15 @@
       "No se puede evaluar porque combina distintos tipos de operadores."
     ],
     "respuestaCorrecta": 1,
-    "explicacion": "Forma A (44, 5, 1): primer bloque (22 >= 22 .y. 6 < 6) = 1 .y. 0 = 0; segundo bloque (1 <> 10 .y. 10 = 10) = 1 .y. 1 = 1. Resultado: 0 .o. 1 = 1 (verdadero)."
+    "explicacion": "Con (44, 5, 1): primer bloque (22 >= 22 .y. 6 < 6) = 1 .y. 0 = 0; segundo bloque (1 <> 10 .y. 10 = 10) = 1 .y. 1 = 1. Resultado: 0 .o. 1 = 1 (verdadero)."
   },
   {
     "id": 106,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 1 · Slides 30-32",
-    "tema": "Evaluación Lógica (Forma B)",
+    "tema": "Evaluación Lógica",
     "dificultad": "Intermedia",
-    "enunciado": "[Forma B: @JORNADA=30, @BIENIO=4, @CONTRATO=10] Condición: ((@JORNADA / 2 >= 22) .y. (@BIENIO + 1 < 6)) .o. ((@CONTRATO <> 10) .y. (@BIENIO * 2 = 10)). ¿Qué resultado entrega?",
+    "enunciado": "Con @JORNADA=30, @BIENIO=4, @CONTRATO=10, evalúa la condición: ((@JORNADA / 2 >= 22) .y. (@BIENIO + 1 < 6)) .o. ((@CONTRATO <> 10) .y. (@BIENIO * 2 = 10)). ¿Qué resultado entrega?",
     "opciones": [
       "0 (falso).",
       "1 (verdadero).",
@@ -1693,11 +1693,11 @@
       "No se puede evaluar porque combina distintos tipos de operadores."
     ],
     "respuestaCorrecta": 0,
-    "explicacion": "Forma B (30, 4, 10): primer bloque (15 >= 22) = 0; segundo bloque (10 <> 10) = 0. Resultado: 0 .o. 0 = 0 (falso)."
+    "explicacion": "Con (30, 4, 10): primer bloque (15 >= 22) = 0; segundo bloque (10 <> 10) = 0. Resultado: 0 .o. 0 = 0 (falso)."
   },
   {
     "id": 107,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 2 · Slide 4",
     "tema": "Análisis de Formulación",
     "dificultad": "Básica",
@@ -1713,7 +1713,7 @@
   },
   {
     "id": 108,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 2 · Slides 19, 26-34",
     "tema": "Lógica Interna",
     "dificultad": "Intermedia",
@@ -1729,7 +1729,7 @@
   },
   {
     "id": 109,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 2 · Slides 36, 41",
     "tema": "Funciones",
     "dificultad": "Intermedia",
@@ -1745,7 +1745,7 @@
   },
   {
     "id": 110,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 3 · Slide 18",
     "tema": "Movimientos Informados",
     "dificultad": "Intermedia",
@@ -1761,7 +1761,7 @@
   },
   {
     "id": 111,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 3 · Slides 23-25",
     "tema": "Tope por Funcionario",
     "dificultad": "Intermedia",
@@ -1777,7 +1777,7 @@
   },
   {
     "id": 112,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 3 · Slides 29, 33",
     "tema": "Prioridad de Descuentos",
     "dificultad": "Intermedia",
@@ -1793,7 +1793,7 @@
   },
   {
     "id": 113,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 1 · Slide 10",
     "tema": "Cálculo de Días",
     "dificultad": "Básica",
@@ -1809,7 +1809,7 @@
   },
   {
     "id": 114,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 2 · Slides 37, 41",
     "tema": "Funciones de Reliquidación",
     "dificultad": "Intermedia",
@@ -1825,7 +1825,7 @@
   },
   {
     "id": 115,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 2 · Slides 40, 41",
     "tema": "Funciones de Reliquidación",
     "dificultad": "Avanzada",
@@ -1841,7 +1841,7 @@
   },
   {
     "id": 116,
-    "sesion": "Prueba REM",
+    "sesion": "Bonus",
     "diapositiva": "Sesión 3 · Slides 29, 35",
     "tema": "Prioridad de Descuentos",
     "dificultad": "Intermedia",

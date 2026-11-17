@@ -138,7 +138,7 @@ function updateStats() {
 function renderSessionSummary() {
   const grid = document.getElementById('sessionSummaryGrid');
   grid.innerHTML = '';
-  const groups = ['Sesión 1', 'Sesión 2', 'Sesión 3', 'Sesión 4', 'Prueba REM'];
+  const groups = ['Sesión 1', 'Sesión 2', 'Sesión 3', 'Sesión 4', 'Bonus'];
   for (const sName of groups) {
     const qs = state.questions.filter((q) => q.sesion === sName);
     if (qs.length === 0) continue;
@@ -421,45 +421,31 @@ function buildCalcCard(calc, contextLabel) {
 }
 
 // Practice Exercises Logic
-function initExercisesControls() {
-  const buttons = document.querySelectorAll('#formaSelector .sheet-tab');
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      state.activeForma = btn.dataset.forma;
-      buttons.forEach((b) => b.classList.toggle('active', b.dataset.forma === state.activeForma));
-      renderExercises();
-    });
-  });
-}
-
 function renderExercises() {
   const container = document.getElementById('exercisesContent');
   container.innerHTML = '';
 
   state.exercises.forEach((ex) => {
-    const f = ex.formas[state.activeForma];
-    if (!f) return;
-
     const card = el('article', 'calc-card');
     const top = el('div', 'calc-top');
     const left = el('div');
     const badges = el('div', 'badges');
-    badges.appendChild(el('span', 'badge', `${ex.numero} · Forma ${state.activeForma}`));
+    badges.appendChild(el('span', 'badge', ex.numero));
     badges.appendChild(el('span', 'badge badge-neutral', ex.subtitulo));
     left.appendChild(badges);
     left.appendChild(el('h2', 'calc-title', ex.titulo));
     top.appendChild(left);
-    top.appendChild(el('span', 'result-pill', f.resumen));
+    top.appendChild(el('span', 'result-pill', ex.resumen));
     card.appendChild(top);
 
-    card.appendChild(el('p', '', f.enunciado));
+    card.appendChild(el('p', '', ex.enunciado));
 
     const solDetails = document.createElement('details');
     solDetails.className = 'jump-details';
     solDetails.open = true;
     solDetails.appendChild(el('summary', 'jump-summary', 'Ver / ocultar desarrollo paso a paso'));
 
-    f.pasos.forEach((paso) => {
+    ex.pasos.forEach((paso) => {
       solDetails.appendChild(el('h3', 'exercise-step-title', paso.titulo));
       const tbl = el('table', 'inputs-table');
       const thead = el('thead');
@@ -481,10 +467,10 @@ function renderExercises() {
       solDetails.appendChild(wrap);
     });
 
-    if (f.nota) {
+    if (ex.nota) {
       const rule = el('div', 'rule-callout');
       rule.appendChild(el('strong', '', 'Nota de criterio: '));
-      rule.appendChild(document.createTextNode(f.nota));
+      rule.appendChild(document.createTextNode(ex.nota));
       solDetails.appendChild(rule);
     }
 
@@ -520,7 +506,6 @@ async function bootstrap() {
     applyQuizFilters();
     initExcelControls();
     renderExcel();
-    initExercisesControls();
     renderExercises();
   } catch (err) {
     document.getElementById('quizBody').innerHTML = '';
