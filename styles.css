@@ -584,6 +584,12 @@ select, input[type="search"] {
   -webkit-overflow-scrolling: touch;
 }
 
+.exercise-step-title {
+  margin: 14px 0 6px;
+  font-size: 0.94rem;
+  color: var(--primary);
+}
+
 .footer {
   border-top: 1px solid var(--border);
   background: var(--surface);

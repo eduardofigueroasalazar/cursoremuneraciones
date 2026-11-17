@@ -10,6 +10,8 @@ const state = {
   activeWorkbookIdx: 0,
   activeSheetIdx: 0,
   excelQuery: '',
+  exercises: [],
+  activeForma: 'A',
 };
 
 function loadAnswers() {
@@ -57,6 +59,7 @@ function initTabs() {
   const buttons = document.querySelectorAll('.nav-btn');
   const panels = {
     quiz: document.getElementById('tab-quiz'),
+    exercises: document.getElementById('tab-exercises'),
     excel: document.getElementById('tab-excel'),
   };
   buttons.forEach((btn) => {
@@ -135,9 +138,10 @@ function updateStats() {
 function renderSessionSummary() {
   const grid = document.getElementById('sessionSummaryGrid');
   grid.innerHTML = '';
-  for (let i = 1; i <= 4; i++) {
-    const sName = `Sesión ${i}`;
+  const groups = ['Sesión 1', 'Sesión 2', 'Sesión 3', 'Sesión 4', 'Prueba REM'];
+  for (const sName of groups) {
     const qs = state.questions.filter((q) => q.sesion === sName);
+    if (qs.length === 0) continue;
     const ansCount = qs.filter((q) => state.answers[q.id] !== undefined).length;
     const okCount = qs.filter((q) => state.answers[q.id] === q.respuestaCorrecta).length;
 
@@ -416,6 +420,79 @@ function buildCalcCard(calc, contextLabel) {
   return card;
 }
 
+// Practice Exercises Logic
+function initExercisesControls() {
+  const buttons = document.querySelectorAll('#formaSelector .sheet-tab');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.activeForma = btn.dataset.forma;
+      buttons.forEach((b) => b.classList.toggle('active', b.dataset.forma === state.activeForma));
+      renderExercises();
+    });
+  });
+}
+
+function renderExercises() {
+  const container = document.getElementById('exercisesContent');
+  container.innerHTML = '';
+
+  state.exercises.forEach((ex) => {
+    const f = ex.formas[state.activeForma];
+    if (!f) return;
+
+    const card = el('article', 'calc-card');
+    const top = el('div', 'calc-top');
+    const left = el('div');
+    const badges = el('div', 'badges');
+    badges.appendChild(el('span', 'badge', `${ex.numero} · Forma ${state.activeForma}`));
+    badges.appendChild(el('span', 'badge badge-neutral', ex.subtitulo));
+    left.appendChild(badges);
+    left.appendChild(el('h2', 'calc-title', ex.titulo));
+    top.appendChild(left);
+    top.appendChild(el('span', 'result-pill', f.resumen));
+    card.appendChild(top);
+
+    card.appendChild(el('p', '', f.enunciado));
+
+    const solDetails = document.createElement('details');
+    solDetails.className = 'jump-details';
+    solDetails.open = true;
+    solDetails.appendChild(el('summary', 'jump-summary', 'Ver / ocultar desarrollo paso a paso'));
+
+    f.pasos.forEach((paso) => {
+      solDetails.appendChild(el('h3', 'exercise-step-title', paso.titulo));
+      const tbl = el('table', 'inputs-table');
+      const thead = el('thead');
+      const trH = el('tr');
+      paso.columnas.forEach((col) => trH.appendChild(el('th', '', col)));
+      thead.appendChild(trH);
+      tbl.appendChild(thead);
+
+      const tbody = el('tbody');
+      paso.filas.forEach((fila) => {
+        const tr = el('tr');
+        fila.forEach((val) => tr.appendChild(el('td', '', val)));
+        tbody.appendChild(tr);
+      });
+      tbl.appendChild(tbody);
+
+      const wrap = el('div', 'table-wrap');
+      wrap.appendChild(tbl);
+      solDetails.appendChild(wrap);
+    });
+
+    if (f.nota) {
+      const rule = el('div', 'rule-callout');
+      rule.appendChild(el('strong', '', 'Nota de criterio: '));
+      rule.appendChild(document.createTextNode(f.nota));
+      solDetails.appendChild(rule);
+    }
+
+    card.appendChild(solDetails);
+    container.appendChild(card);
+  });
+}
+
 async function bootstrap() {
   initTheme();
   initTabs();
@@ -430,17 +507,21 @@ async function bootstrap() {
   });
 
   try {
-    const [qRes, xRes] = await Promise.all([
+    const [qRes, xRes, eRes] = await Promise.all([
       fetch('./data/questions.json'),
       fetch('./data/excel_explanations.json'),
+      fetch('./data/practice_exercises.json'),
     ]);
-    if (!qRes.ok || !xRes.ok) throw new Error('Error al cargar los archivos JSON');
+    if (!qRes.ok || !xRes.ok || !eRes.ok) throw new Error('Error al cargar los archivos JSON');
     state.questions = await qRes.json();
     state.workbooks = await xRes.json();
+    state.exercises = await eRes.json();
 
     applyQuizFilters();
     initExcelControls();
     renderExcel();
+    initExercisesControls();
+    renderExercises();
   } catch (err) {
     document.getElementById('quizBody').innerHTML = '';
     document.getElementById('quizBody').appendChild(

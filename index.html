@@ -13,12 +13,15 @@
         <span class="brand-badge">SIGPER 2026</span>
         <div>
           <h1>Capacitación Remuneraciones &amp; Centralización</h1>
-          <p class="subtitle">Evaluación (100 preguntas) y Explicador de Cálculos Excel</p>
+          <p class="subtitle">Evaluación (116 preguntas), Ejercicios y Explicador Excel</p>
         </div>
       </div>
       <nav class="nav-tabs" aria-label="Secciones principales">
         <button type="button" class="nav-btn active" data-tab="quiz" aria-pressed="true">
-          Cuestionario <span class="pill">100</span>
+          Cuestionario <span class="pill">116</span>
+        </button>
+        <button type="button" class="nav-btn" data-tab="exercises" aria-pressed="false">
+          Ejercicios Prueba <span class="pill">3</span>
         </button>
         <button type="button" class="nav-btn" data-tab="excel" aria-pressed="false">
           Cálculos Excel <span class="pill">6 libros</span>
@@ -38,11 +41,12 @@
           <div class="control-group">
             <label for="filterSession">Sesión</label>
             <select id="filterSession">
-              <option value="ALL">Todas las sesiones (100)</option>
+              <option value="ALL">Todas las sesiones (116)</option>
               <option value="Sesión 1">Sesión 1 — Marco Legal y Formulación (25)</option>
               <option value="Sesión 2">Sesión 2 — Proceso y Funciones (25)</option>
               <option value="Sesión 3">Sesión 3 — Liquidaciones y Prioridad (25)</option>
               <option value="Sesión 4">Sesión 4 — Centralización Contable (25)</option>
+              <option value="Prueba REM">Prueba REM — Forma A y B (16)</option>
             </select>
           </div>
           <div class="control-group">
@@ -89,7 +93,25 @@
       </div>
     </section>
 
-    <!-- MÓDULO 2: EXPLICADOR EXCEL -->
+    <!-- MÓDULO 2: EJERCICIOS PRUEBA -->
+    <section id="tab-exercises" class="tab-panel" hidden aria-label="Ejercicios prácticos Forma A y B">
+      <div class="card controls-card">
+        <div class="excel-controls">
+          <div class="control-group grow">
+            <label>Selecciona la Forma de la Prueba</label>
+            <div class="sheet-tabs" id="formaSelector" style="margin-bottom:0">
+              <button type="button" class="sheet-tab active" data-forma="A">Forma A</button>
+              <button type="button" class="sheet-tab" data-forma="B">Forma B</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="exercisesContent" class="calc-grid">
+        <div class="card empty-state">Cargando ejercicios...</div>
+      </div>
+    </section>
+
+    <!-- MÓDULO 3: EXPLICADOR EXCEL -->
     <section id="tab-excel" class="tab-panel" hidden aria-label="Explicador de cálculos Excel">
       <div class="card controls-card">
         <div class="excel-controls">

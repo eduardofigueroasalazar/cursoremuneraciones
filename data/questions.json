@@ -1598,5 +1598,261 @@
     ],
     "respuestaCorrecta": 1,
     "explicacion": "La lámina 47 resume: 'En ambos casos el gasto (531) y el total pagado son los mismos: 1.848.507. Lo que cambia es el camino que recorre la deuda hasta pagarse'."
+  },
+  {
+    "id": 101,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 1 · Slide 16",
+    "tema": "Formulación",
+    "dificultad": "Básica",
+    "enunciado": "¿Cuáles son los tres tipos de fórmulas definidos en SIGPER?",
+    "opciones": [
+      "Haberes imponibles, haberes tributables y haberes exentos.",
+      "Haberes, descuentos y bases de cálculo.",
+      "Atributos, constantes y tablas definibles.",
+      "Contratos, funcionarios y particiones."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Atributos, constantes y tablas son elementos/variables de formulación, no tipos de fórmulas. Los 3 tipos de fórmulas son Haberes, Descuentos y Bases de cálculo."
+  },
+  {
+    "id": 102,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 1 · Slide 33",
+    "tema": "Detalle de Formulación",
+    "dificultad": "Básica",
+    "enunciado": "En el detalle de una fórmula, ¿qué se ingresa en Condición cuando no se requiere una condición específica?",
+    "opciones": [
+      "El monto del concepto.",
+      "El código de la raíz.",
+      "El valor 0.",
+      "El valor 1."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "1 equivale a verdadero: la fórmula siempre se ejecuta."
+  },
+  {
+    "id": 103,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 1 · Slide 31",
+    "tema": "Operadores Lógicos",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué interpretación de los operadores lógicos es correcta?",
+    "opciones": [
+      "Con .y. deben cumplirse todas las condiciones; con .o. basta una.",
+      "Con .y. basta una condición; con .o. deben cumplirse todas.",
+      "Ambos operadores requieren que se cumplan todas las condiciones.",
+      "Ambos operadores realizan operaciones matemáticas."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En SIGPER, `.y.` exige que todas las condiciones sean verdaderas y `.o.` exige que al menos una lo sea."
+  },
+  {
+    "id": 104,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 1 · Slides 27-28",
+    "tema": "Elementos de Formulación",
+    "dificultad": "Básica",
+    "enunciado": "¿Qué diferencia a una constante de una tabla definible?",
+    "opciones": [
+      "La constante se calcula por contrato y la tabla solo por funcionario.",
+      "La constante almacena texto y la tabla no admite entradas de texto.",
+      "La constante tiene un valor por periodo; la tabla obtiene un valor según una entrada y su vigencia.",
+      "La constante solo sirve para descuentos y la tabla solo para haberes."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Una constante guarda un valor único por periodo (ej. UF, UTM), mientras la tabla definible asocia una salida numérica a un valor de entrada según vigencia."
+  },
+  {
+    "id": 105,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 1 · Slides 30-32",
+    "tema": "Evaluación Lógica (Forma A)",
+    "dificultad": "Intermedia",
+    "enunciado": "[Forma A: @JORNADA=44, @BIENIO=5, @CONTRATO=1] Condición: ((@JORNADA / 2 >= 22) .y. (@BIENIO + 1 < 6)) .o. ((@CONTRATO <> 10) .y. (@BIENIO * 2 = 10)). ¿Qué resultado entrega?",
+    "opciones": [
+      "0 (falso).",
+      "1 (verdadero).",
+      "10.",
+      "No se puede evaluar porque combina distintos tipos de operadores."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Forma A (44, 5, 1): primer bloque (22 >= 22 .y. 6 < 6) = 1 .y. 0 = 0; segundo bloque (1 <> 10 .y. 10 = 10) = 1 .y. 1 = 1. Resultado: 0 .o. 1 = 1 (verdadero)."
+  },
+  {
+    "id": 106,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 1 · Slides 30-32",
+    "tema": "Evaluación Lógica (Forma B)",
+    "dificultad": "Intermedia",
+    "enunciado": "[Forma B: @JORNADA=30, @BIENIO=4, @CONTRATO=10] Condición: ((@JORNADA / 2 >= 22) .y. (@BIENIO + 1 < 6)) .o. ((@CONTRATO <> 10) .y. (@BIENIO * 2 = 10)). ¿Qué resultado entrega?",
+    "opciones": [
+      "0 (falso).",
+      "1 (verdadero).",
+      "10.",
+      "No se puede evaluar porque combina distintos tipos de operadores."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Forma B (30, 4, 10): primer bloque (15 >= 22) = 0; segundo bloque (10 <> 10) = 0. Resultado: 0 .o. 0 = 0 (falso)."
+  },
+  {
+    "id": 107,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 2 · Slide 4",
+    "tema": "Análisis de Formulación",
+    "dificultad": "Básica",
+    "enunciado": "¿Para qué sirve el análisis de formulación?",
+    "opciones": [
+      "Para reemplazar los montos de todas las fórmulas por movimientos informados.",
+      "Para identificar dependencias y generar secuencias de ejecución desde el elemento principal.",
+      "Para consolidar exclusivamente los procesos ya pagados.",
+      "Para determinar las prioridades sin revisar relaciones entre fórmulas."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El análisis de formulación recorre el árbol desde el Elemento principal, identifica dependencias y genera las secuencias de ejecución por periodo."
+  },
+  {
+    "id": 108,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 2 · Slides 19, 26-34",
+    "tema": "Lógica Interna",
+    "dificultad": "Intermedia",
+    "enunciado": "Un proceso con aplicación al Contrato considera dos contratos, cada uno con dos particiones. ¿Cuántas liquidaciones genera para ese funcionario?",
+    "opciones": [
+      "Una, porque todas las particiones se consolidan por funcionario.",
+      "Cuatro, una por cada partición.",
+      "Tres, dos por contrato y una consolidada adicional.",
+      "Dos, una por cada contrato con sus particiones consolidadas."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "En aplicación al Contrato se genera una liquidación por cada contrato a pago, consolidando internamente las particiones de ese contrato."
+  },
+  {
+    "id": 109,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 2 · Slides 36, 41",
+    "tema": "Funciones",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué función suma los bloques de una fórmula solo dentro del contrato actual?",
+    "opciones": [
+      "SUMBLOQUE.",
+      "PAGADOPRD.",
+      "SUMFORCO.",
+      "PAGADO."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "SUMFORCO suma solo los bloques del contrato donde estás parado (no cruza contratos); SUMBLOQUE suma los bloques de todos los contratos."
+  },
+  {
+    "id": 110,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 3 · Slide 18",
+    "tema": "Movimientos Informados",
+    "dificultad": "Intermedia",
+    "enunciado": "Existe un movimiento informado para una fórmula cuya condición no se cumple. ¿Qué ocurre antes del control de prioridad de descuentos?",
+    "opciones": [
+      "El monto propuesto reemplaza al calculado, aunque la condición no se cumpla.",
+      "Se descarta el movimiento informado por no cumplirse la condición.",
+      "Se suma el monto propuesto al cálculo normal de la fórmula.",
+      "Se aplica el monto propuesto completo en cada contrato."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los movimientos informados tienen prioridad absoluta sobre la lógica estándar del cálculo de la fórmula, reemplazando el monto calculado antes de aplicar prioridad de descuentos."
+  },
+  {
+    "id": 111,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 3 · Slides 23-25",
+    "tema": "Tope por Funcionario",
+    "dificultad": "Intermedia",
+    "enunciado": "¿En cuál de los siguientes casos corresponde usar Tope por funcionario?",
+    "opciones": [
+      "En un haber calculado como porcentaje del total de haberes.",
+      "En un descuento dependiente del líquido de cada contrato.",
+      "En cualquier fórmula para generar una sola liquidación por funcionario.",
+      "En un APV de monto fijo con aplicación al Contrato, calculado con datos del funcionario y sin depender de otras fórmulas."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Evita que un descuento de monto fijo (conceptual al funcionario, como APV) se descuente duplicado en cada contrato en procesos con aplicación al Contrato."
+  },
+  {
+    "id": 112,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 3 · Slides 29, 33",
+    "tema": "Prioridad de Descuentos",
+    "dificultad": "Intermedia",
+    "enunciado": "Según la capacitación, ¿qué afirmación sobre Prioridad General es correcta?",
+    "opciones": [
+      "Se ejecuta solo si está habilitado el control de descuentos no obligatorios.",
+      "Debe aplicarse si el LAP queda bajo el mínimo configurado y opera en el periodo de remuneraciones, excluyendo los retroactivos.",
+      "Solo controla los descuentos de origen cooperativa.",
+      "Permite superar el monto propuesto para completar el descuento en cascada."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La Prioridad General garantiza que el LAP sea mayor o igual al mínimo configurado y solo opera en el periodo de remuneraciones vigente (excluye retroactivos)."
+  },
+  {
+    "id": 113,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 1 · Slide 10",
+    "tema": "Cálculo de Días",
+    "dificultad": "Básica",
+    "enunciado": "Un sueldo base mensual de $600.000 se proporciona sobre 30 días. ¿Qué monto corresponde a una partición de 12 días?",
+    "opciones": [
+      "$240.000.",
+      "$200.000.",
+      "$360.000.",
+      "$600.000."
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Cálculo proporcional sobre base 30: 600.000 × 12 / 30 = $240.000."
+  },
+  {
+    "id": 114,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 2 · Slides 37, 41",
+    "tema": "Funciones de Reliquidación",
+    "dificultad": "Intermedia",
+    "enunciado": "En una reliquidación, ¿qué devuelve PAGADOPRD para una fórmula?",
+    "opciones": [
+      "La diferencia del contrato en curso.",
+      "La suma de lo pagado para la fórmula en todos los contratos del funcionario.",
+      "Lo pagado solo en el contrato actual.",
+      "La suma del cálculo actual de todos los contratos."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "PAGADOPRD suma la columna Pagado de todos los contratos de la persona y entrega ese total repetido en cada contrato."
+  },
+  {
+    "id": 115,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 2 · Slides 40, 41",
+    "tema": "Funciones de Reliquidación",
+    "dificultad": "Avanzada",
+    "enunciado": "En el segundo contrato de una reliquidación, ¿qué devuelve PAGOPROC para una fórmula del contrato anterior?",
+    "opciones": [
+      "El monto pagado en el proceso anterior.",
+      "El cálculo mes completo.",
+      "La diferencia que se calculó para esa fórmula en el contrato anterior del mismo proceso.",
+      "La suma de los montos pagados de ambos contratos en el proceso anterior."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "En una reliquidación/reproceso, PAGOPROC trae únicamente la diferencia (Calculo Mes - Pagado) del contrato anterior."
+  },
+  {
+    "id": 116,
+    "sesion": "Prueba REM",
+    "diapositiva": "Sesión 3 · Slides 29, 35",
+    "tema": "Prioridad de Descuentos",
+    "dificultad": "Intermedia",
+    "enunciado": "¿Qué descuentos pueden usar el cupo adicional de Aumento Cooperativa?",
+    "opciones": [
+      "Todos los descuentos no obligatorios.",
+      "Solo los descuentos obligatorios.",
+      "Solo los descuentos sin origen cooperativa.",
+      "Solo los descuentos no obligatorios de origen cooperativa con monto rechazado por el Tope General."
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El cupo adicional de Aumento Cooperativa solo absorbe el monto rechazado en el Tope General de descuentos no obligatorios con origen Cooperativa = SÍ."
   }
 ]
