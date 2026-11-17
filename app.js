@@ -484,6 +484,9 @@ async function bootstrap() {
   initTabs();
 
   document.getElementById('btnApplyQuiz').addEventListener('click', applyQuizFilters);
+  ['filterSession', 'filterDifficulty', 'quizMode'].forEach((id) => {
+    document.getElementById(id).addEventListener('change', applyQuizFilters);
+  });
   document.getElementById('btnResetProgress').addEventListener('click', () => {
     if (confirm('¿Deseas borrar todas tus respuestas guardadas?')) {
       state.answers = {};
@@ -493,10 +496,11 @@ async function bootstrap() {
   });
 
   try {
+    const bust = '?v=20261116b';
     const [qRes, xRes, eRes] = await Promise.all([
-      fetch('./data/questions.json'),
-      fetch('./data/excel_explanations.json'),
-      fetch('./data/practice_exercises.json'),
+      fetch(`./data/questions.json${bust}`, { cache: 'no-cache' }),
+      fetch(`./data/excel_explanations.json${bust}`, { cache: 'no-cache' }),
+      fetch(`./data/practice_exercises.json${bust}`, { cache: 'no-cache' }),
     ]);
     if (!qRes.ok || !xRes.ok || !eRes.ok) throw new Error('Error al cargar los archivos JSON');
     state.questions = await qRes.json();
