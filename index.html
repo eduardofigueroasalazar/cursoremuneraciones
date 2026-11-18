@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capacitación SIGPER Remuneraciones y Centralización 2026</title>
-  <link rel="stylesheet" href="./styles.css?v=20261116b">
+  <link rel="stylesheet" href="./styles.css?v=20261118">
 </head>
 <body>
   <header class="topbar">
@@ -13,15 +13,12 @@
         <span class="brand-badge">SIGPER 2026</span>
         <div>
           <h1>Capacitación Remuneraciones &amp; Centralización</h1>
-          <p class="subtitle">Evaluación (116 preguntas), Ejercicios y Explicador Excel</p>
+          <p class="subtitle">Evaluación (100 preguntas) y Explicador de Cálculos Excel</p>
         </div>
       </div>
       <nav class="nav-tabs" aria-label="Secciones principales">
         <button type="button" class="nav-btn active" data-tab="quiz" aria-pressed="true">
-          Cuestionario <span class="pill">116</span>
-        </button>
-        <button type="button" class="nav-btn" data-tab="exercises" aria-pressed="false">
-          Ejercicios Bonus <span class="pill">6</span>
+          Cuestionario <span class="pill">100</span>
         </button>
         <button type="button" class="nav-btn" data-tab="excel" aria-pressed="false">
           Cálculos Excel <span class="pill">6 libros</span>
@@ -41,12 +38,11 @@
           <div class="control-group">
             <label for="filterSession">Sesión</label>
             <select id="filterSession">
-              <option value="ALL">Todas las sesiones (116)</option>
+              <option value="ALL">Todas las sesiones (100)</option>
               <option value="Sesión 1">Sesión 1 — Marco Legal y Formulación (25)</option>
               <option value="Sesión 2">Sesión 2 — Proceso y Funciones (25)</option>
               <option value="Sesión 3">Sesión 3 — Liquidaciones y Prioridad (25)</option>
               <option value="Sesión 4">Sesión 4 — Centralización Contable (25)</option>
-              <option value="Bonus">Bonus de preguntas (16)</option>
             </select>
           </div>
           <div class="control-group">
@@ -93,14 +89,7 @@
       </div>
     </section>
 
-    <!-- MÓDULO 2: EJERCICIOS BONUS -->
-    <section id="tab-exercises" class="tab-panel" hidden aria-label="Ejercicios prácticos bonus">
-      <div id="exercisesContent" class="calc-grid">
-        <div class="card empty-state">Cargando ejercicios...</div>
-      </div>
-    </section>
-
-    <!-- MÓDULO 3: EXPLICADOR EXCEL -->
+    <!-- MÓDULO 2: EXPLICADOR EXCEL -->
     <section id="tab-excel" class="tab-panel" hidden aria-label="Explicador de cálculos Excel">
       <div class="card controls-card">
         <div class="excel-controls">
@@ -127,6 +116,6 @@
     </div>
   </footer>
 
-  <script type="module" src="./app.js?v=20261116b"></script>
+  <script type="module" src="./app.js?v=20261118"></script>
 </body>
 </html>

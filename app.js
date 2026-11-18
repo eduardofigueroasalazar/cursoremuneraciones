@@ -10,8 +10,6 @@ const state = {
   activeWorkbookIdx: 0,
   activeSheetIdx: 0,
   excelQuery: '',
-  exercises: [],
-  activeForma: 'A',
 };
 
 function loadAnswers() {
@@ -59,7 +57,6 @@ function initTabs() {
   const buttons = document.querySelectorAll('.nav-btn');
   const panels = {
     quiz: document.getElementById('tab-quiz'),
-    exercises: document.getElementById('tab-exercises'),
     excel: document.getElementById('tab-excel'),
   };
   buttons.forEach((btn) => {
@@ -138,7 +135,7 @@ function updateStats() {
 function renderSessionSummary() {
   const grid = document.getElementById('sessionSummaryGrid');
   grid.innerHTML = '';
-  const groups = ['Sesión 1', 'Sesión 2', 'Sesión 3', 'Sesión 4', 'Bonus'];
+  const groups = ['Sesión 1', 'Sesión 2', 'Sesión 3', 'Sesión 4'];
   for (const sName of groups) {
     const qs = state.questions.filter((q) => q.sesion === sName);
     if (qs.length === 0) continue;
@@ -420,65 +417,6 @@ function buildCalcCard(calc, contextLabel) {
   return card;
 }
 
-// Practice Exercises Logic
-function renderExercises() {
-  const container = document.getElementById('exercisesContent');
-  container.innerHTML = '';
-
-  state.exercises.forEach((ex) => {
-    const card = el('article', 'calc-card');
-    const top = el('div', 'calc-top');
-    const left = el('div');
-    const badges = el('div', 'badges');
-    badges.appendChild(el('span', 'badge', ex.numero));
-    badges.appendChild(el('span', 'badge badge-neutral', ex.subtitulo));
-    left.appendChild(badges);
-    left.appendChild(el('h2', 'calc-title', ex.titulo));
-    top.appendChild(left);
-    top.appendChild(el('span', 'result-pill', ex.resumen));
-    card.appendChild(top);
-
-    card.appendChild(el('p', '', ex.enunciado));
-
-    const solDetails = document.createElement('details');
-    solDetails.className = 'jump-details';
-    solDetails.open = true;
-    solDetails.appendChild(el('summary', 'jump-summary', 'Ver / ocultar desarrollo paso a paso'));
-
-    ex.pasos.forEach((paso) => {
-      solDetails.appendChild(el('h3', 'exercise-step-title', paso.titulo));
-      const tbl = el('table', 'inputs-table');
-      const thead = el('thead');
-      const trH = el('tr');
-      paso.columnas.forEach((col) => trH.appendChild(el('th', '', col)));
-      thead.appendChild(trH);
-      tbl.appendChild(thead);
-
-      const tbody = el('tbody');
-      paso.filas.forEach((fila) => {
-        const tr = el('tr');
-        fila.forEach((val) => tr.appendChild(el('td', '', val)));
-        tbody.appendChild(tr);
-      });
-      tbl.appendChild(tbody);
-
-      const wrap = el('div', 'table-wrap');
-      wrap.appendChild(tbl);
-      solDetails.appendChild(wrap);
-    });
-
-    if (ex.nota) {
-      const rule = el('div', 'rule-callout');
-      rule.appendChild(el('strong', '', 'Nota de criterio: '));
-      rule.appendChild(document.createTextNode(ex.nota));
-      solDetails.appendChild(rule);
-    }
-
-    card.appendChild(solDetails);
-    container.appendChild(card);
-  });
-}
-
 async function bootstrap() {
   initTheme();
   initTabs();
@@ -496,21 +434,18 @@ async function bootstrap() {
   });
 
   try {
-    const bust = '?v=20261116b';
-    const [qRes, xRes, eRes] = await Promise.all([
+    const bust = '?v=20261118';
+    const [qRes, xRes] = await Promise.all([
       fetch(`./data/questions.json${bust}`, { cache: 'no-cache' }),
       fetch(`./data/excel_explanations.json${bust}`, { cache: 'no-cache' }),
-      fetch(`./data/practice_exercises.json${bust}`, { cache: 'no-cache' }),
     ]);
-    if (!qRes.ok || !xRes.ok || !eRes.ok) throw new Error('Error al cargar los archivos JSON');
+    if (!qRes.ok || !xRes.ok) throw new Error('Error al cargar los archivos JSON');
     state.questions = await qRes.json();
     state.workbooks = await xRes.json();
-    state.exercises = await eRes.json();
 
     applyQuizFilters();
     initExcelControls();
     renderExcel();
-    renderExercises();
   } catch (err) {
     document.getElementById('quizBody').innerHTML = '';
     document.getElementById('quizBody').appendChild(
